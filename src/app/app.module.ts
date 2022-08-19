@@ -4,12 +4,16 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './pages/shared/header/header.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { GreetingAreaComponent } from './pages/greeting-area/greeting-area.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { LandingPageComponent } from './pages/landing-page/landing-page.component';
-import { GreetingAreaComponent } from './pages/greeting-area/greeting-area.component';
-import { HeaderComponent } from './pages/shared/header/header.component';
+
+// import { PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+
+// const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = { suppressScrollX: true };
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -35,8 +39,11 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    // PerfectScrollbarModule,
   ],
-  providers: [],
+  providers: [
+    // { provide: PERFECT_SCROLLBAR_CONFIG, useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
