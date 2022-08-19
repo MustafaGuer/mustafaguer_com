@@ -1,2 +1,2 @@
-export const headline: string = `Hi, I\'m Mustafa Gür!`;
-export const subHeadline: string = `I\'m a Frontend Web Developer!`;
+export const engHeadline: string = `Hi, I\'m Mustafa Gür!`;
+export const engSubHeadline: string = `I\'m a Frontend Web Developer!`;
