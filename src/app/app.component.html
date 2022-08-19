@@ -1,3 +1,4 @@
-<perfect-scrollbar class="position-relative" [config]="config" style="height: 100vh">
+<perfect-scrollbar class="position-relative vh-100" [config]="config">
   <router-outlet></router-outlet>
+  <button class="position-absolute bottom-0" (click)="scrollToPos(0, 0)">click</button>
 </perfect-scrollbar>

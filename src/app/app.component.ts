@@ -25,4 +25,8 @@ export class AppComponent {
   public setToLang(lang: string) {
     this.translate.use(lang);
   }
+
+  public scrollToPos(x: number, y: number): void {
+    this.componentRef?.directiveRef?.scrollTo(x, y, 500);
+  }
 }
