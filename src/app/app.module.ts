@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { GreetingAreaComponent } from './pages/greeting-area/greeting-area.component';
+import { HeaderComponent } from './pages/shared/header/header.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -15,7 +18,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingPageComponent,
+    GreetingAreaComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
