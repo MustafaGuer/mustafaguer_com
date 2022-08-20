@@ -1,4 +1,4 @@
 git add .
-set \p commit=Commit:
+set /p commit=Enter Commit:
 git commit -m "%commit%"
 git push
