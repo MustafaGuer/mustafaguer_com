@@ -18,6 +18,7 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit {
   private headlineLetterIndex: number = 0;
   private headlineSpeed: number = 100;
   private headlineTimerId: any;
+  public hidden: boolean = false;
 
   @ViewChild('myCanvas') private myCanvas: ElementRef = {} as ElementRef;
   @HostListener('window:resize', ['$event'])
