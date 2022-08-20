@@ -1,5 +1,5 @@
 export enum MatrixLetterColors {
-  RED = 'red',
-  GREEN = 'green',
+  WARN = 'red',
+  DEFAULT = 'green',
   BOOTSTRAP = 'bootstrap',
 }

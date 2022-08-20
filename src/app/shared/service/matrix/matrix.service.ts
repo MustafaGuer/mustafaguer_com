@@ -21,7 +21,7 @@ export class MatrixService {
 
   constructor() { }
 
-  public initMatrix(canvas: ElementRef, color: string = MatrixLetterColors.GREEN): void {
+  public initMatrix(canvas: ElementRef, color: string = MatrixLetterColors.DEFAULT): void {
     this.setContext(canvas);
     this.setDrops();
     this.draw(canvas, color);
@@ -67,7 +67,7 @@ export class MatrixService {
     this.initMatrix(canvas, color);
   }
 
-  public resizedCtx(canvas: ElementRef, ) {
+  public resizeCtx(canvas: ElementRef, ) {
     clearInterval(this.intervalId);
 
     this.initMatrix(canvas, this.activeLetterColor);
