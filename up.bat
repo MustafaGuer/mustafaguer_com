@@ -1,4 +1,6 @@
+@echo off
+
 git add .
-SET /P commit=Enter Commit:
+set /p commit=
 git commit -m "%commit%"
 git push
