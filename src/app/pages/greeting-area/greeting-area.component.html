@@ -1,4 +1,4 @@
-<div class="position-relative">
+<div class="position-relative" style="background: black">
   <canvas #myCanvas></canvas>
 
   <div class="container-fluid d-flex justify-content-center align-items-center greetingArea position-absolute top-0 bottom-0 right-0 left-0">
@@ -8,6 +8,10 @@
       <button class="btn btn-success" (click)="changeLetterColor('bootstrap')">Bootstrap</button>
       <button class="btn btn-success" (click)="changeLetterColor('red')">Red</button>
       <button class="btn btn-success" (click)="changeLetterColor('green')">Green</button>
+      <h2>{{'greet' | translate}}</h2>
+      <button class="btn btn-danger" (click)="changeLang('tr')">TR</button>
+      <button class="btn btn-danger" (click)="changeLang('de')">DE</button>
+      <button class="btn btn-danger" (click)="changeLang('en')">ENG</button>
     </div>
   </div>
 </div>

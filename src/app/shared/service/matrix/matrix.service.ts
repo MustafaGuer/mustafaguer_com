@@ -1,4 +1,7 @@
+import { MatrixLetterColors } from './../../enum/matrix-letter-colors';
 import { Injectable, ElementRef } from '@angular/core';
+import { katakana, latin, nums } from '../../const/matrixLetter';
+import { redLetters, bootstrapLetters, greenLetters } from '../../const/matrixLetterColors';
 
 @Injectable({
   providedIn: 'root'
@@ -7,13 +10,9 @@ export class MatrixService {
 
   public ctx: CanvasRenderingContext2D = {} as CanvasRenderingContext2D;
 
-  private katakana: string = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
-  private latin: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  private nums: string = '0123456789';
-  private letters: string = this.katakana + this.latin + this.nums;
-  private redLetters: string = '#f4427d';
-  private boostrapLetters: string = '#7633FA';
-  private greenLetters: string = '#0f0';
+  private letters: string = katakana + latin + nums;
+
+  private activeLetterColor: string = '';
   private lettersArr: string[] = [];
   private fontSize: number = 16;
   private columns: number = 0;
@@ -22,10 +21,11 @@ export class MatrixService {
 
   constructor() { }
 
-  public initMatrix(canvas: ElementRef, color: string): void {
+  public initMatrix(canvas: ElementRef, color: string = MatrixLetterColors.GREEN): void {
     this.setContext(canvas);
     this.setDrops();
     this.draw(canvas, color);
+    this.activeLetterColor = color;
   }
 
   public setContext(canvas: ElementRef): void {
@@ -50,9 +50,9 @@ export class MatrixService {
       for (let i = 0; i < this.drops.length; i++) {
         let text = this.lettersArr[Math.floor(Math.random() * this.lettersArr.length)];
 
-        if (color === 'red') this.ctx.fillStyle = this.redLetters;
-        else if (color === 'bootstrap') this.ctx.fillStyle = this.boostrapLetters;
-        else if (color === 'green') this.ctx.fillStyle = this.greenLetters;
+        if (color === 'red') this.ctx.fillStyle = redLetters;
+        else if (color === 'bootstrap') this.ctx.fillStyle = bootstrapLetters;
+        else if (color === 'green') this.ctx.fillStyle = greenLetters;
 
         this.ctx.fillText(text, i * this.fontSize, this.drops[i] * this.fontSize);
         this.drops[i]++;
@@ -65,6 +65,12 @@ export class MatrixService {
   public changeColor(canvas: ElementRef, color: string): void {
     clearInterval(this.intervalId);
     this.initMatrix(canvas, color);
+  }
+
+  public resizedCtx(canvas: ElementRef, ) {
+    clearInterval(this.intervalId);
+
+    this.initMatrix(canvas, this.activeLetterColor);
   }
 
 }
