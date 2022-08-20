@@ -1,7 +1,16 @@
-<div class="container-fluid d-flex justify-content-center align-items-center vh-100 greetingArea">
-  <div class="text-center">
-    <h1 class="headline" id="headline"></h1>
-    <h2 id="subHeadline"></h2>
+<div class="position-relative">
+  <canvas #myCanvas></canvas>
+
+  <div class="container-fluid d-flex justify-content-center align-items-center greetingArea position-absolute top-0 bottom-0 right-0 left-0">
+    <div class="text-center">
+      <h1 class="headline" id="headline"></h1>
+      <h2 id="subHeadline"></h2>
+      <button class="btn btn-success" (click)="changeLetterColor('bootstrap')">Bootstrap</button>
+      <button class="btn btn-success" (click)="changeLetterColor('red')">Red</button>
+      <button class="btn btn-success" (click)="changeLetterColor('green')">Green</button>
+    </div>
   </div>
 </div>
-<div class="vh-100"></div>
+
+
+
