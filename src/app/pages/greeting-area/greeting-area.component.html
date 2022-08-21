@@ -4,24 +4,34 @@
 
     <div class="row justify-content-center align-content-center h-100 w-100 flex-column-reverse flex-sm-row">
 
-      <div class="text-center col d-flex align-items-center flex-column">
-        <div class="d-flex">
-          <div class="spinner">
-            <button class="btn matrixButton bluePill ms-2 me-2" type="button" (click)="changeMatrixColor(matrixLetterColors.BLUE)"></button>
+      <div class="text-center col d-flex flex-column justify-content-between">
+        <div class="d-flex flex-column align-items-center">
+          <div class="d-flex">
+            <div class="pulser me-2 ms-2">
+              <img class="matrixButton bluePill cursor-pointer" role="button"
+                (click)="changeMatrixColor(matrixLetterColors.BLUE)" src="../../../assets/icons/bluePill.png"
+                alt="Blue Pill">
+            </div>
+            <div class="pulser me-2 ms-2">
+              <img class="matrixButton redPill " role="button" (click)="changeMatrixColor(matrixLetterColors.RED)"
+                src="../../../assets/icons/redPill.png" alt="Red Pill">
+            </div>
+            <div class="pulser me-2 ms-2">
+              <img class="matrixButton greenPill" role="button" (click)="changeMatrixColor(matrixLetterColors.GREEN)"
+                src="../../../assets/icons/greenPill.png" alt="Green Pill">
+            </div>
           </div>
-          <div class="spinner">
-            <button class="btn matrixButton redPill ms-2 me-2" type="button" (click)="changeMatrixColor(matrixLetterColors.RED)" ></button>
-          </div>
-          <div class="spinner">
-            <button class="btn matrixButton greenPill ms-2 me-2" type="button"(click)="changeMatrixColor(matrixLetterColors.GREEN)"></button>
-          </div>
+          <h1 class="headline" id="headline"></h1>
         </div>
-        <h1 class="headline" id="headline"></h1>
+        <div>
+          <h3 class="whoami">$whoami</h3>
+          <img class="arrowDown" role="button" src="../../../assets/icons/arrowDown.png" alt="Arrow Down">
+        </div>
       </div>
 
       <div class="col d-flex justify-content-center align-items-center">
         <div class="imgBox">
-            <img class="img-thumbnail hacker" src="../../../assets/img/mustafa.jpg" />
+          <img class="img-thumbnail hacker" src="../../../assets/img/mustafa.jpg" />
         </div>
       </div>
 
