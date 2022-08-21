@@ -1,13 +1,14 @@
+@import 'src/app/shared/scss/colors.scss';
+
 .box {
-  background: #f5f5f5;
-  background: red;
+  background: $lightbackground;
 }
 
 .card-box {
   width: 320px;
 
   img {
-    height: 200px;
+    height: 320px;
     object-fit: cover;
     object-position: 50% 20%;
   }
