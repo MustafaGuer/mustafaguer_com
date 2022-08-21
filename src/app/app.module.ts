@@ -13,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { ImprintComponent } from './pages/imprint/imprint.component';
+import { AboutAreaComponent } from './pages/about-area/about-area.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = { suppressScrollX: true, wheelPropagation: true };
 
@@ -28,6 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     GreetingAreaComponent,
     HeaderComponent,
     ImprintComponent,
+    AboutAreaComponent,
   ],
   imports: [
     BrowserModule,
