@@ -4,19 +4,18 @@
 
     <div class="row justify-content-center align-content-center h-100 w-100 flex-column-reverse flex-sm-row">
 
-      <div class="text-center col d-flex justify-content-center">
+      <div class="text-center col d-flex align-items-center flex-column">
+        <div data-aos="fade-down">
+          <button class="btn matrixButton bluePill ms-2 me-2" type="button" (click)="changeMatrixColor(matrixLetterColors.BLUE)"></button>
+          <button class="btn matrixButton redPill ms-2 me-2" type="button" (click)="changeMatrixColor(matrixLetterColors.RED)" ></button>
+          <button class="btn matrixButton greenPill ms-2 me-2" type="button"(click)="changeMatrixColor(matrixLetterColors.GREEN)"></button>
+        </div>
         <h1 class="headline" id="headline"></h1>
-        <!-- <button class="btn btn-success" (click)="changeMatrixColor(matrixLetterColors.BOOTSTRAP)">{{matrixLetterColors.BOOTSTRAP | titlecase}}</button> -->
-        <!-- <button class="btn btn-success" (click)="changeMatrixColor(matrixLetterColors.WARN)">{{matrixLetterColors.WARN | titlecase}}</button> -->
-        <!-- <button class="btn btn-success" (click)="changeMatrixColor(matrixLetterColors.DEFAULT)">{{matrixLetterColors.DEFAULT | titlecase}}</button> -->
-        <!-- <button class="btn btn-danger" (click)="changeActiveLang('tr')">TR</button> -->
-        <!-- <button class="btn btn-danger" (click)="changeActiveLang('de')">DE</button> -->
-        <!-- <button class="btn btn-danger" (click)="changeActiveLang('en')">ENG</button> -->
       </div>
 
       <div class="col d-flex justify-content-center align-items-center">
         <div class="imgBox">
-          <img class="img-thumbnail hacker" src="../../../assets/img/hacker.jpg" />
+          <img class="img-thumbnail hacker" src="../../../assets/img/mustafa.jpg" />
         </div>
       </div>
 
@@ -25,3 +24,13 @@
   </div>
 
 </div>
+
+
+
+
+<!-- <button class="btn btn-success" (click)="changeMatrixColor(matrixLetterColors.BOOTSTRAP)">{{matrixLetterColors.BOOTSTRAP | titlecase}}</button> -->
+        <!-- <button class="btn btn-success" (click)="changeMatrixColor(matrixLetterColors.WARN)">{{matrixLetterColors.WARN | titlecase}}</button> -->
+        <!-- <button class="btn btn-success" (click)="changeMatrixColor(matrixLetterColors.DEFAULT)">{{matrixLetterColors.DEFAULT | titlecase}}</button> -->
+        <!-- <button class="btn btn-danger" (click)="changeActiveLang('tr')">TR</button> -->
+        <!-- <button class="btn btn-danger" (click)="changeActiveLang('de')">DE</button> -->
+        <!-- <button class="btn btn-danger" (click)="changeActiveLang('en')">ENG</button> -->

@@ -1,7 +1,7 @@
 import { MatrixLetterColors } from './../../enum/matrix-letter-colors';
 import { Injectable, ElementRef } from '@angular/core';
 import { katakana, latin, nums } from '../../const/matrixLetter';
-import { redLetters, bootstrapLetters, greenLetters } from '../../const/matrixLetterColors';
+import { redLetters, blueLetters, greenLetters } from '../../const/matrixLetterColors';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +21,7 @@ export class MatrixService {
 
   constructor() { }
 
-  public initMatrix(canvas: ElementRef, color: string = MatrixLetterColors.DEFAULT): void {
+  public initMatrix(canvas: ElementRef, color: string = MatrixLetterColors.GREEN): void {
     this.setContext(canvas);
     this.setDrops();
     this.draw(canvas, color);
@@ -50,9 +50,9 @@ export class MatrixService {
       for (let i = 0; i < this.drops.length; i++) {
         let text = this.lettersArr[Math.floor(Math.random() * this.lettersArr.length)];
 
-        if (color === 'red') this.ctx.fillStyle = redLetters;
-        else if (color === 'bootstrap') this.ctx.fillStyle = bootstrapLetters;
-        else if (color === 'green') this.ctx.fillStyle = greenLetters;
+        if (color === MatrixLetterColors.RED) this.ctx.fillStyle = redLetters;
+        else if (color === MatrixLetterColors.BLUE) this.ctx.fillStyle = blueLetters;
+        else if (color === MatrixLetterColors.GREEN) this.ctx.fillStyle = greenLetters;
 
         this.ctx.fillText(text, i * this.fontSize, this.drops[i] * this.fontSize);
         this.drops[i]++;

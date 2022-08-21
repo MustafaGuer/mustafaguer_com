@@ -13,7 +13,7 @@ import { MatrixLetterColors } from 'src/app/shared/enum/matrix-letter-colors';
 export class GreetingAreaComponent implements OnInit, AfterViewInit {
 
   public matrixLetterColors: any = MatrixLetterColors;
-  private activeMatrixLetterColor: string = MatrixLetterColors.DEFAULT;
+  private activeMatrixLetterColor: string = MatrixLetterColors.GREEN;
   private activeHeadlineLang: string = engHeadline;
   private headlineLetterIndex: number = 0;
   private headlineSpeed: number = 100;
@@ -37,9 +37,9 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit {
   }
 
   public changeMatrixColor(color: string): void {
-    if (color === MatrixLetterColors.BOOTSTRAP) this.matrixService.changeColor(this.myCanvas, MatrixLetterColors.BOOTSTRAP);
-    else if (color === MatrixLetterColors.WARN) this.matrixService.changeColor(this.myCanvas, MatrixLetterColors.WARN);
-    else if (color === MatrixLetterColors.DEFAULT) this.matrixService.changeColor(this.myCanvas, MatrixLetterColors.DEFAULT);
+    if (color === MatrixLetterColors.BLUE) this.matrixService.changeColor(this.myCanvas, MatrixLetterColors.BLUE);
+    else if (color === MatrixLetterColors.RED) this.matrixService.changeColor(this.myCanvas, MatrixLetterColors.RED);
+    else if (color === MatrixLetterColors.GREEN) this.matrixService.changeColor(this.myCanvas, MatrixLetterColors.GREEN);
   }
 
   private async loadHeadline() {
