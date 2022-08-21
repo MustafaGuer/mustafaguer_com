@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener, 
 import { engHeadline, deHeadline, trHeadline } from 'src/app/shared/const/headlines';
 import { MatrixService } from 'src/app/shared/service/matrix/matrix.service';
 import { MatrixLetterColors } from 'src/app/shared/enum/matrix-letter-colors';
+import { Languages } from 'src/app/shared/enum/languages';
 
 
 @Component({
@@ -13,6 +14,7 @@ import { MatrixLetterColors } from 'src/app/shared/enum/matrix-letter-colors';
 export class GreetingAreaComponent implements OnInit, AfterViewInit {
 
   public matrixLetterColors: any = MatrixLetterColors;
+  public languages: any = Languages;
   private activeMatrixLetterColor: string = MatrixLetterColors.GREEN;
   private activeHeadlineLang: string = engHeadline;
   private headlineLetterIndex: number = 0;
