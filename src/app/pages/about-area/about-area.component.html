@@ -1,21 +1,25 @@
 <div class="box pt-5 pb-5">
-
   <div class="container pt-5 pb-5">
     <div class="row pt-5 pb-5">
-      <div class="col">
-        <div class="card card-box">
-          <img src="../../../assets/img/mustafa.jpg" alt="Profile Image">
-          <div class="card-body">
-            <h5 class="card-title text-center">
-              ${{'whoami' | translate}}
-            </h5>
-            <p class="card-text text-center">{{'about' | translate}}</p>
-          </div>
-        </div>
+      <div class="col d-flex flex-column align-items-center">
+        <img class="profileImg mb-3" src="../../../assets/img/mustafa.jpg" alt="Profile Image">
+        <h5 class="card-title text-center">
+          ${{'whoami' | translate}}
+        </h5>
+        <p class="card-text text-center pb-3">{{'about' | translate}}</p>
       </div>
-      <div class="col">
+      <div class="col-8">
+        <div class="skillStackContainer d-inline-flex flex-wrap">
+          <ng-container *ngTemplateOutlet="skillStackImgs"></ng-container>
+
+        </div>
       </div>
     </div>
   </div>
-
 </div>
+
+<ng-template #skillStackImgs>
+  <div *ngFor="let skill of skillStack" class="skillImgContainer m-3">
+    <img src="../../../assets/logos/angular.svg">
+  </div>
+</ng-template>

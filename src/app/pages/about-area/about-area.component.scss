@@ -4,12 +4,19 @@
   background: $lightbackground;
 }
 
-.card-box {
-  width: 320px;
+.profileImg {
+  width: 200px;
+  border-radius: 16px;
+}
 
-  img {
-    height: 320px;
-    object-fit: cover;
-    object-position: 50% 20%;
+.skillStackContainer {
+
+  div {
+    width: 160px;
+
+    img {
+      width: 64px;
+    }
   }
+
 }
