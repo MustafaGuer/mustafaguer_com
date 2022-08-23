@@ -1,0 +1,16 @@
+export const skillsStack = [
+  {name: 'JavaScript', url: '../../../assets/logos/javascript.svg'},
+  {name: 'Angular', url: '../../../assets/logos/angular.svg'},
+  {name: 'HTML5', url: '../../../assets/logos/html5.svg'},
+  {name: 'CSS3', url: '../../../assets/logos/css3.svg'},
+  {name: 'SASS/SCSS', url: '../../../assets/logos/sassscss.svg'},
+  {name: 'TypeScript', url: '../../../assets/logos/typescript.svg'},
+  {name: 'ReactJS', url: '../../../assets/logos/reactjs.svg'},
+  {name: 'PHP', url: '../../../assets/logos/php.svg'},
+  {name: 'SCRUM', url: '../../../assets/logos/scrum.svg'},
+  {name: 'REST', url: '../../../assets/logos/rest.svg'},
+  {name: 'API', url: '../../../assets/logos/api.png'},
+  {name: 'Firebase', url: '../../../assets/logos/firebase_logo.svg'},
+  {name: 'Git', url: '../../../assets/logos/git.png'},
+  {name: 'Github', url: '../../../assets/logos/github.svg'},
+];
