@@ -1,13 +1,15 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { PerfectScrollbarConfigInterface, PerfectScrollbarComponent, PerfectScrollbarDirective } from 'ngx-perfect-scrollbar';
+
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   public title: string = 'mustafaguer_com';
 
   public config: PerfectScrollbarConfigInterface = {wheelSpeed: 1.2};
@@ -20,6 +22,7 @@ export class AppComponent {
 
     // the lang to use, if the lang isn't available, it will use the current loader to get them
     this.translate.use('en');
+
   }
 
   public setToLang(lang: string) {
@@ -28,5 +31,10 @@ export class AppComponent {
 
   public scrollToPos(x: number, y: number): void {
     this.componentRef?.directiveRef?.scrollTo(x, y, 500);
+  }
+
+  ngOnInit(): void {
+    Aos.init();
+    Aos.refresh();
   }
 }
