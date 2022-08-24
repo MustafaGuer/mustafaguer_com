@@ -1,8 +1,9 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import * as Aos from 'aos';
 import { PerfectScrollbarConfigInterface, PerfectScrollbarComponent, PerfectScrollbarDirective } from 'ngx-perfect-scrollbar';
 
-import * as Aos from 'aos';
+
 
 @Component({
   selector: 'app-root',
@@ -35,6 +36,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     Aos.init();
-    Aos.refresh();
+    // Aos.refresh();
   }
 }
