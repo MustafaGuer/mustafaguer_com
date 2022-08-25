@@ -1,3 +1,21 @@
 {
-  "greet" : "HalloWelt!"
+  "greet": "HelloWelt!",
+  "whoami": "whoami",
+  "about": "Ich bin 32 Jahre alt und IT-Fachmann. In den letzten Jahren habe ich meinen eigenen Taxi-Limousinen-Service in München geleitet. Während der Pandemie entschied ich mich, wieder ganz zu meinen Wurzeln in der IT zurückzukehren und an Softwareentwicklungsprojekten zu arbeiten. So habe ich im letzten Jahr eine Vielzahl von Front-End-Projekten von einfachen Websites bis hin zu komplexen Web-Apps entwickelt. Jetzt suche ich nach neuen Herausforderungen in der Front-End-Webentwicklung.",
+  "skillstack": "Skill Stack",
+  "imprint": {
+    "firstName": "Mustafa",
+    "lastName": "Gür",
+    "street": "Werinherstraße 12",
+    "zip": "81541",
+    "mustafaEmail": "mustafaguer@yahoo.de",
+    "mustafaPhone": "+49 1762 489 9531",
+    "city": "München",
+    "imprint": "Impressum",
+    "infoAccord": "Angaben gemäß § 5 TMG",
+    "represendetBy": "Vertreten durch:",
+    "contact": "Kontakt:",
+    "phone": "Telefon:",
+    "email": "E-Mail:"
+  }
 }

@@ -1,3 +1,21 @@
 {
-  "greet" : "MerhabaAlem!"
+  "greet": "MerhabaAlem!",
+  "whoami": "whoami",
+  "about": "32 yaşındayım ve bir bilişim uzmanıyım. Son birkaç yıldır Münih'te kendi taksi limuzin servisimi işletiyorum. Pandemi sırasında tamamen köklerime dönmeye ve yazılım geliştirme projeleri üzerinde çalışmaya karar verdim. Son bir yıl içinde basit web sitelerinden karmaşık web uygulamalarına kadar çeşitli ön uç projeleri geliştirdim. Artık ön uç web geliştirme alanında yeni deneyimler arıyorum.",
+  "skillstack": "Beceri Yığını",
+  "imprint": {
+    "firstName": "Mustafa",
+    "lastName": "Gür",
+    "street": "Werinher Caddesi No.12",
+    "zip": "81541",
+    "mustafaEmail": "mustafaguer@yahoo.de",
+    "mustafaPhone": "+49 1762 489 9531",
+    "city": "Münih",
+    "imprint": "Künye",
+    "infoAccord": "TMG Madde 5 uyarınca bilgiler",
+    "represendetBy": "Tarafından temsil edilmektedir:",
+    "contact": "İletişim:",
+    "phone": "Telefon:",
+    "email": "E-posta:"
+  }
 }
