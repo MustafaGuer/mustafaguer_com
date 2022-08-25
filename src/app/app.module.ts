@@ -16,6 +16,9 @@ import { ImprintComponent } from './pages/imprint/imprint.component';
 import { AboutAreaComponent } from './sections/about-area/about-area.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { ContactFormComponent } from './sections/contact-form/contact-form.component';
+import { SkillStackComponent } from './sections/skill-stack/skill-stack.component';
+import { FooterComponent } from './sections/shared/footer/footer.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,6 +35,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutAreaComponent,
     ProjectsComponent,
     PrivacyPolicyComponent,
+    ContactFormComponent,
+    SkillStackComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

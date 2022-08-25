@@ -1,0 +1,21 @@
+<div class="container d-flex justify-content-center my-5">
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">{{'contactForm.name' | translate}}</label>
+      <input type="text" class="form-control" id="nameInput" placeholder="{{'contactForm.name' | translate}}">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">{{'contactForm.email' | translate}}</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1"
+        placeholder="{{'contactForm.emailPlaceholder' | translate}}">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">{{'contactForm.message' | translate}}</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+        placeholder="{{'contactForm.messagePlaceholder' | translate}}"></textarea>
+    </div>
+    <div class="mt-5">
+      <button type="button" class="btn btn-dark btn-lg w-100">{{'contactForm.send' | translate}}</button>
+    </div>
+  </form>
+</div>

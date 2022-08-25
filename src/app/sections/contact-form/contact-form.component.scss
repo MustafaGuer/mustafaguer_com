@@ -1,0 +1,9 @@
+@import 'src/app/shared/scss/colors.scss';
+@import 'src/app/shared/scss/sizes.scss';
+
+form {
+  width: $formWidth;
+  padding: $formPadding;
+  box-shadow: $boxShadow;
+  border-radius: $borderRadius;
+}

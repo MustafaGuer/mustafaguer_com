@@ -17,5 +17,14 @@
     "contact": "Contact:",
     "phone": "Phone:",
     "email": "E-Mail:"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email address",
+    "message": "Your Message",
+    "namePlaceholder": "Type your name.",
+    "emailPlaceholder": "Your email address.",
+    "messagePlaceholder": "Your Message.",
+    "send": "Send Message"
   }
 }

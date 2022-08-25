@@ -1,0 +1,5 @@
+@import 'src/app/shared/scss/sizes.scss';
+
+.imprint {
+  height: calc(100vh - $footerHeight - $headerHeight);
+}
