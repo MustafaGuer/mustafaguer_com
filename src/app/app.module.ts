@@ -5,20 +5,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './pages/shared/header/header.component';
-import { LandingPageComponent } from './pages/landing-page/landing-page.component';
-import { GreetingAreaComponent } from './pages/greeting-area/greeting-area.component';
+import { HeaderComponent } from './sections/shared/header/header.component';
+import { LandingPageComponent } from './sections/landing-page/landing-page.component';
+import { GreetingAreaComponent } from './sections/greeting-area/greeting-area.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-// import { PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
-import { ImprintComponent } from './pages/imprint/imprint.component';
-import { AboutAreaComponent } from './pages/about-area/about-area.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
-
-// const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = { suppressScrollX: true, wheelPropagation: true };
+import { ImprintComponent } from './sections/imprint/imprint.component';
+import { AboutAreaComponent } from './sections/about-area/about-area.component';
+import { ProjectsComponent } from './sections/projects/projects.component';
+import { PrivacyPolicyComponent } from './sections/privacy-policy/privacy-policy.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -48,12 +45,9 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    // PerfectScrollbarModule,
     BrowserAnimationsModule,
   ],
-  providers: [
-    // { provide: PERFECT_SCROLLBAR_CONFIG, useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
