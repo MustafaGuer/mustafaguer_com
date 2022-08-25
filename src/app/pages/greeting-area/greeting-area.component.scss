@@ -1,7 +1,9 @@
 @import 'src/app/shared/scss/colors.scss';
+@import 'src/app/shared/scss/sizes.scss';
 
 .greetingArea {
   background: $black;
+  width: calc(100vw - $scrollbarWidth * 2);
 }
 .headline {
   font-size: 3rem;
@@ -59,7 +61,7 @@
   border-radius: 100%;
   width: 32px;
   height: 32px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .bluePill {
