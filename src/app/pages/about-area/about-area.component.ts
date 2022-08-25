@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutAreaComponent implements OnInit {
 
   public skillStack: Skills[] = skillsStack;
+  public skillsOffset:string = '200';
 
   constructor() { }
 

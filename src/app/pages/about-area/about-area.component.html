@@ -2,9 +2,7 @@
   <div class="container pt-5 pb-5">
     <div class="row pt-5 pb-5">
       <div class="col d-flex flex-column align-items-center">
-        <h5 class="card-title text-center mb-3">${{'whoami' | translate}}</h5>
-        <img class="profileImg mb-3" src="../../../assets/img/mustafa.jpg" alt="Profile Image">
-        <p class="card-text text-center pb-3">{{'about' | translate}}</p>
+        <ng-container *ngTemplateOutlet="whoami"></ng-container>
       </div>
       <div class="col-8 text-center">
         <h3>{{'skillstack' | translate}}</h3>
@@ -16,8 +14,15 @@
   </div>
 </div>
 
+<ng-template #whoami>
+    <h5 class="card-title text-center mb-3" data-aos="fade-right">${{'whoami' | translate}}</h5>
+    <img class="profileImg mb-3" src="../../../assets/img/mustafa.jpg" alt="Profile Image" data-aos="fade-right">
+    <p class="card-text text-center pb-3" data-aos="fade-right" data-aos-offset="500">{{'about' | translate}}</p>
+</ng-template>
+
 <ng-template #skillStackImgs>
-  <div *ngFor="let skill of skillStack" class="skillImgContainer m-3">
+  <div *ngFor="let skill of skillStack" class="skillImgContainer m-3" data-aos="fade-left"
+    [attr.data-aos-offset]="skillsOffset">
     <div class="skillImgBox d-inline-flex justify-content-center">
       <img src="{{skill.url}}">
     </div>
