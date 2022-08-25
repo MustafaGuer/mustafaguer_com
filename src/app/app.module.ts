@@ -12,10 +12,10 @@ import { GreetingAreaComponent } from './sections/greeting-area/greeting-area.co
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { ImprintComponent } from './sections/imprint/imprint.component';
+import { ImprintComponent } from './pages/imprint/imprint.component';
 import { AboutAreaComponent } from './sections/about-area/about-area.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
-import { PrivacyPolicyComponent } from './sections/privacy-policy/privacy-policy.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
