@@ -20,6 +20,11 @@
   width: 450px;
   height: 450px;
 
+  @media(max-width: 992px) {
+    width: 350px;
+    height: 350px;
+  }
+
   @media (max-width: 576px) {
     & {
       width: 200px;
