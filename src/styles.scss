@@ -2,6 +2,10 @@
 @import './app/shared/scss/colors.scss';
 @import './app/shared/scss/sizes.scss';
 
+html, body {
+  margin: 0;
+}
+
 /* Works on Firefox */
 * {
   scrollbar-width: thin;

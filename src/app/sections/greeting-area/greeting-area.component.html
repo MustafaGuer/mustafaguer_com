@@ -1,20 +1,20 @@
-<div class="greetingArea position-relative d-flex justify-content-center">
+<div class="greetingArea">
 
   <canvas #myCanvas></canvas>
 
-  <div class="position-absolute top-0 bottom-0 right-0 left-0 d-flex align-items-center">
+  <div class="">
 
-    <div class="container vw-100">
-      <div class="row">
-        <div class="d-flex vh-100 flex-column-reverse flex-lg-row align-items-lg-center">
-          <div class="col">
-            <div class="d-flex flex-column align-items-center">
+    <div class="">
+      <div class="">
+        <div class="">
+          <div class="">
+            <div class="">
               <ng-container *ngTemplateOutlet="pills"></ng-container>
-              <h1 class="headline text-light text-center" id="headline"></h1>
+              <h1 class="headline" id="headline"></h1>
             </div>
             <ng-container *ngTemplateOutlet="arrow"></ng-container>
           </div>
-          <div class="col d-flex justify-content-center align-items-center">
+          <div class="">
             <ng-container *ngTemplateOutlet="profleImg"></ng-container>
           </div>
         </div>
@@ -24,16 +24,16 @@
 </div>
 
 <ng-template #pills>
-  <div class="d-flex">
-    <div class="pulser me-2 ms-2">
-      <img class="matrixButton bluePill cursor-pointer" role="button"
+  <div class="">
+    <div class="pulser">
+      <img class="matrixButton bluePill" role="button"
         (click)="changeMatrixColor(matrixLetterColors.BLUE)" [src]="bluePill" alt="{{'bluepill' | translate}}">
     </div>
-    <div class="pulser me-2 ms-2">
+    <div class="pulser">
       <img class="matrixButton redPill " role="button" (click)="changeMatrixColor(matrixLetterColors.RED)"
         [src]="redPill" alt="{{'redpill' | translate}}">
     </div>
-    <div class="pulser me-2 ms-2">
+    <div class="pulser">
       <img class="matrixButton greenPill" role="button" (click)="changeMatrixColor(matrixLetterColors.GREEN)"
         [src]="greenPill" alt="{{'greenpill' | translate}}">
     </div>
@@ -42,7 +42,7 @@
 
 
 <ng-template #arrow>
-  <div class="d-none d-lg-flex flex-column align-items-center">
+  <div class="">
     <h3 [ngClass]="matrixService.activeLetterColor == matrixLetterColors.GREEN ? 'whoamiGreen': '' ||
       matrixService.activeLetterColor == matrixLetterColors.RED ? 'whoamiRed':'' ||
       matrixService.activeLetterColor == matrixLetterColors.BLUE ? 'whoamiBlue':''" data-aos="fade-in"
@@ -58,6 +58,6 @@
 
 <ng-template #profleImg>
   <div class="imgBox">
-    <img class="img-thumbnail hacker" src="../../../assets/img/hacker.jpg" />
+    <img class="hacker" src="../../../assets/img/hacker.jpg" />
   </div>
 </ng-template>
