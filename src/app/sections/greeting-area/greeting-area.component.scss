@@ -1,5 +1,5 @@
-@import 'src/app/shared/scss/colors.scss';
-@import 'src/app/shared/scss/sizes.scss';
+@import "src/app/shared/scss/colors.scss";
+@import "src/app/shared/scss/sizes.scss";
 
 .greetingArea {
   background: $black;
@@ -106,8 +106,16 @@
     }
   }
 }
-.whoami {
+.whoamiRed {
   color: $red;
+}
+
+.whoamiGreen {
+  color: $green;
+}
+
+.whoamiBlue {
+  color: $blue;
 }
 
 .arrowDown {
@@ -126,4 +134,8 @@
       transform: translateY(0);
     }
   }
+}
+
+canvas {
+  max-height: 100vh;
 }

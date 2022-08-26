@@ -1,4 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import * as Aos from 'aos';
 // import { PerfectScrollbarConfigInterface, PerfectScrollbarComponent, PerfectScrollbarDirective } from 'ngx-perfect-scrollbar';
@@ -17,7 +18,7 @@ export class AppComponent implements OnInit {
   // @ViewChild(PerfectScrollbarComponent) componentRef?: PerfectScrollbarComponent;
   // @ViewChild(PerfectScrollbarDirective) directiveRef?: PerfectScrollbarDirective;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, public router: Router) {
     // this language will be used as a fallback when a translation isn't found in the current language
     this.translate.setDefaultLang('en');
 

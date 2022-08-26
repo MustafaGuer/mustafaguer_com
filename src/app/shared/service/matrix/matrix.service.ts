@@ -12,7 +12,7 @@ export class MatrixService {
 
   private letters: string = katakana + latin + nums;
 
-  private activeLetterColor: string = '';
+  public activeLetterColor: string = MatrixLetterColors.GREEN;
   private lettersArr: string[] = [];
   private fontSize: number = 16;
   private columns: number = 0;

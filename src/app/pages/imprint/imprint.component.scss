@@ -2,4 +2,5 @@
 
 .imprint {
   height: calc(100vh - $footerHeight - $headerHeight);
+  margin-top: $headerHeight;
 }

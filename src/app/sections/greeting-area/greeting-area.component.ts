@@ -1,10 +1,10 @@
 import { TranslateService } from '@ngx-translate/core';
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener, ɵDirectiveDef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 import { engHeadline, deHeadline, trHeadline } from 'src/app/shared/const/headlines';
 import { MatrixService } from 'src/app/shared/service/matrix/matrix.service';
 import { MatrixLetterColors } from 'src/app/shared/enum/matrix-letter-colors';
 import { Languages } from 'src/app/shared/enum/languages';
-
+import { greenArrowPath, redArrowPath, blueArrowPath, bluePillPath, greenPillPath, redPillPath } from 'src/app/shared/const/paths';
 
 @Component({
   selector: 'app-greeting-area',
@@ -15,12 +15,18 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit {
 
   public matrixLetterColors: any = MatrixLetterColors;
   public languages: any = Languages;
-  private activeMatrixLetterColor: string = MatrixLetterColors.GREEN;
+  public activeMatrixLetterColor: string = this.matrixService.activeLetterColor;
   private activeHeadlineLang: string = engHeadline;
   private headlineLetterIndex: number = 0;
   private headlineSpeed: number = 100;
   private headlineTimerId: any;
   public hidden: boolean = false;
+  public greenArrow = greenArrowPath;
+  public blueArrow = blueArrowPath;
+  public redArrow = redArrowPath;
+  public greenPill = greenPillPath;
+  public bluePill = bluePillPath;
+  public redPill = redPillPath;
 
   @ViewChild('myCanvas') private myCanvas: ElementRef = {} as ElementRef;
   @HostListener('window:resize', ['$event'])
@@ -28,7 +34,7 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit {
     this.matrixService.resizeCtx(this.myCanvas);
   }
 
-  constructor(public translate: TranslateService, private matrixService: MatrixService) { }
+  constructor(public translate: TranslateService, public matrixService: MatrixService) { }
 
   ngOnInit(): void {
     this.loadHeadline();
