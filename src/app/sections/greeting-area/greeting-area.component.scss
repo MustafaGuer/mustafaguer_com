@@ -1,10 +1,22 @@
 @import "src/app/shared/scss/colors.scss";
 @import "src/app/shared/scss/sizes.scss";
 
-.greetingArea {
+.greetingAreaContainer {
   background: $black;
-  width: calc(100vw - $scrollbarWidth * 2);
+  // width: calc(100vw - $scrollbarWidth * 2);
+  position: relative;
 }
+
+.greetingAreaBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .headline {
   font-size: 3rem;
   white-space: pre-wrap;
@@ -143,4 +155,5 @@
 
 canvas {
   max-height: 100vh;
+  width: calc(100vw - 8px);
 }

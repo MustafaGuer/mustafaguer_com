@@ -1,33 +1,29 @@
-<div class="greetingArea">
+<div class="greetingAreaContainer">
 
   <canvas #myCanvas></canvas>
 
-  <div class="">
-
+  <div class="greetingAreaBox container">
     <div class="">
       <div class="">
         <div class="">
-          <div class="">
-            <div class="">
-              <ng-container *ngTemplateOutlet="pills"></ng-container>
-              <h1 class="headline" id="headline"></h1>
-            </div>
-            <ng-container *ngTemplateOutlet="arrow"></ng-container>
-          </div>
-          <div class="">
-            <ng-container *ngTemplateOutlet="profleImg"></ng-container>
-          </div>
+          <ng-container *ngTemplateOutlet="pills"></ng-container>
+          <h1 class="headline" id="headline"></h1>
         </div>
+        <ng-container *ngTemplateOutlet="arrow"></ng-container>
+      </div>
+      <div class="" >
+        <ng-container *ngTemplateOutlet="profleImg"></ng-container>
       </div>
     </div>
   </div>
+
 </div>
 
 <ng-template #pills>
   <div class="">
     <div class="pulser">
-      <img class="matrixButton bluePill" role="button"
-        (click)="changeMatrixColor(matrixLetterColors.BLUE)" [src]="bluePill" alt="{{'bluepill' | translate}}">
+      <img class="matrixButton bluePill" role="button" (click)="changeMatrixColor(matrixLetterColors.BLUE)"
+        [src]="bluePill" alt="{{'bluepill' | translate}}">
     </div>
     <div class="pulser">
       <img class="matrixButton redPill " role="button" (click)="changeMatrixColor(matrixLetterColors.RED)"
