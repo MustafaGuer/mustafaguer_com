@@ -36,3 +36,13 @@ html, body {
   padding-right: 160px;
   padding-left: 160px;
 }
+
+.bg-dark {
+  background-color: $darkbackground;
+  transition: background-color 225ms ease-in-out;
+}
+
+.bg-light {
+  background-color: $lightbackground;
+  transition: background-color 225ms ease-in-out;
+}

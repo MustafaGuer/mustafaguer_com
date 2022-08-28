@@ -1,3 +1,4 @@
+import { BgService } from './../../shared/service/background/bg.service';
 import { Skills } from './../../shared/interfaces/skills';
 import { skillsStack } from 'src/app/shared/const/skillStack';
 import { Component, OnInit } from '@angular/core';
@@ -12,7 +13,7 @@ export class AboutAreaComponent implements OnInit {
   public skillStack: Skills[] = skillsStack;
   public skillsOffset:string = '200';
 
-  constructor() { }
+  constructor(public bgService: BgService) { }
 
   ngOnInit(): void {
   }
