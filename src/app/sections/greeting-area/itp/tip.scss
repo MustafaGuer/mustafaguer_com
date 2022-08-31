@@ -1,0 +1,690 @@
+* {
+  padding: 0px 0px;
+  margin: 0px;
+  --red: #fa2759;
+  --grey: #131111;
+  --green: #2dfcd8;
+  --typingSpeed: 1.5s;
+  --typingCharacters1: 7;
+  --typingCharacters2: 15;
+  --typingCharacters3: 19;
+  --typingDelay1: 2s;
+  --typingDelay2: 3.5s;
+  --typingDelay3: 5s;
+  --blinkInterval: 1s;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding: 20px 20px 30px 20px;
+  margin-top: 40px;
+}
+
+span {
+  padding: 0px;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding: 0px;
+  height: 70px;
+  word-break: break-all;
+  font-weight: 800;
+}
+
+.backgroundWhite {
+  background-color: white !important;
+}
+
+.backgroundBlack {
+  background-color: Black !important;
+}
+
+.colorBlack {
+  color: rgb(0,0,0,0.8);
+}
+
+.scrollDownArrow {
+  cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mouse_scroll {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 100px;
+  margin-top: 125px;
+}
+
+.m_scroll_arrows {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.m_scroll_arrows_black {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 0 0 3px 4px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.unu {
+  margin-top: 1px;
+}
+
+.unu,
+.doi,
+.trei {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.2s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.trei {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+  0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+  }
+
+  100% {
+      opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% {
+      top: 1px;
+  }
+  25% {
+      top: 2px;
+  }
+  50% {
+      top: 3px;
+  }
+  75% {
+      top: 2px;
+  }
+  100% {
+      top: 1px;
+  }
+}
+@-o-keyframes mouse-wheel {
+  0% {
+      top: 1px;
+  }
+  25% {
+      top: 2px;
+  }
+  50% {
+      top: 3px;
+  }
+  75% {
+      top: 2px;
+  }
+  100% {
+      top: 1px;
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+      top: 1px;
+  }
+  25% {
+      top: 2px;
+  }
+  50% {
+      top: 3px;
+  }
+  75% {
+      top: 2px;
+  }
+  100% {
+      top: 1px;
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.div-dropDownArrow {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 10s;
+  padding-top: 100px;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.img-profile {
+  height: 400px;
+  width: 300px;
+}
+
+.div-home {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 85px 0px 0px 0px;
+  margin: 0px;
+}
+
+.animation-slideIn {
+  animation: slideIn 7.5s;
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-500%); }
+  85% { transform: translateX(-500%);}
+  100% {transform: translateX(0%);}
+}
+
+.div-contact {
+  cursor: pointer;
+  border: 1px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  color: var(--green);
+  text-decoration: none;
+  margin: 25px 0px;
+  z-index: 2;
+  animation: wiggle 6s infinite;
+
+  &:hover {
+      color: white;
+      background-color: var(--green);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+      transform: rotate(0deg);
+  }
+  94% {
+      transform: rotate(0deg);
+  }
+  96% {
+      transform: rotate(5deg);
+  }
+  98% {
+      transform: rotate(-5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.img-dropDown {
+  filter: invert(100);
+  cursor: pointer;
+  animation: dropDown 1.7s ease infinite;
+
+  &:hover {
+      filter: invert(50%);
+  }
+}
+
+@keyframes dropDown {
+  50% {
+      transform: scale(1.1, 1.1);
+  }
+}
+
+.txt-dynamic {
+  font-family: monospace;
+  top: 20px;
+  font-size: 48px;
+  position: relative; //animations adapts to div
+  /* outline: 2px solid red; */
+  width: max-content; //necessary for steps length to adjust
+}
+
+.txt-dynamic2 {
+  font-family: monospace;
+  top: 20px;
+  font-size: 50px;
+  position: relative; //animations adapts to div
+  /* outline: 2px solid red; */
+  width: max-content; //necessary for steps length to adjust
+  color: var(--red);
+}
+
+.txt-dynamic3 {
+  font-family: monospace;
+  top: 20px;
+  font-size: 50px;
+  position: relative; //animations adapts to div
+  /* outline: 2px solid red; */
+  width: max-content; //necessary for steps length to adjust
+}
+
+.txt-dynamic::before,
+.txt-dynamic::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.txt-dynamic2::before,
+.txt-dynamic2::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.txt-dynamic3::before,
+.txt-dynamic3::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 55px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.txt-dynamic::before {
+  background-color: black;
+  animation: typing var(--typingSpeed) steps(var(--typingCharacters1)) var(--typingDelay1) forwards;
+}
+
+.txt-dynamic2::before {
+  background-color: black;
+  animation: typing var(--typingSpeed) steps(var(--typingCharacters2)) var(--typingDelay2) forwards;
+}
+
+.txt-dynamic3::before {
+  background-color: black;
+  animation: typing var(--typingSpeed) steps(var(--typingCharacters3)) var(--typingDelay3) forwards;
+}
+
+.txt-dynamic::after {
+  width: 0.125em;
+  background-color: var(--green);
+  animation: blink var(--blinkInterval) steps(var(--typingCharacters1)) infinite,
+      typingFade var(--typingSpeed) steps(var(--typingCharacters1)) var(--typingDelay1) forwards;
+}
+
+.txt-dynamic2::after {
+  width: 0.125em;
+  background-color: transparent;
+  animation: blink2 var(--blinkInterval) steps(var(--typingCharacters2)) var(--typingDelay2) infinite,
+      typingFade var(--typingSpeed) steps(var(--typingCharacters2)) var(--typingDelay2) forwards;
+}
+
+.txt-dynamic3::after {
+  width: 0.125em;
+  background-color: transparent;
+  animation: blink2 var(--blinkInterval) steps(var(--typingCharacters2)) var(--typingDelay3) infinite,
+      typingFade var(--typingSpeed) steps(var(--typingCharacters3)) var(--typingDelay3) forwards;
+}
+
+.txt-dynamic_white {
+  font-family: monospace;
+  top: 20px;
+  font-size: 50px;
+  position: relative; //animations adapts to div
+  /* outline: 2px solid red; */
+  width: max-content; //necessary for steps length to adjust
+}
+
+.txt-dynamic2_white {
+  font-family: monospace;
+  top: 20px;
+  font-size: 50px;
+  position: relative; //animations adapts to div
+  /* outline: 2px solid red; */
+  width: max-content; //necessary for steps length to adjust
+  color: var(--red);
+}
+
+.txt-dynamic3_white {
+  font-family: monospace;
+  top: 20px;
+  font-size: 50px;
+  position: relative; //animations adapts to div
+  /* outline: 2px solid red; */
+  width: max-content; //necessary for steps length to adjust
+}
+
+.txt-dynamic_white::before,
+.txt-dynamic_white::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.txt-dynamic2_white::before,
+.txt-dynamic2_white::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.txt-dynamic3_white::before,
+.txt-dynamic3_white::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  height: 55px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.txt-dynamic_white::before {
+  background-color: white;
+  animation: typing var(--typingSpeed) steps(var(--typingCharacters1)) var(--typingDelay1) forwards;
+}
+
+.txt-dynamic2_white::before {
+  background-color: white;
+  animation: typing var(--typingSpeed) steps(var(--typingCharacters2)) var(--typingDelay2) forwards;
+}
+
+.txt-dynamic3_white::before {
+  background-color: white;
+  animation: typing var(--typingSpeed) steps(var(--typingCharacters3)) var(--typingDelay3) forwards;
+}
+
+.txt-dynamic_white::after {
+  width: 0.125em;
+  background-color: var(--green);
+  animation: blink var(--blinkInterval) steps(var(--typingCharacters1)) infinite,
+      typingFade var(--typingSpeed) steps(var(--typingCharacters1)) var(--typingDelay1) forwards;
+}
+
+.txt-dynamic2_white::after {
+  width: 0.125em;
+  background-color: transparent;
+  animation: blink2 var(--blinkInterval) steps(var(--typingCharacters2)) var(--typingDelay2) infinite,
+      typingFade var(--typingSpeed) steps(var(--typingCharacters2)) var(--typingDelay2) forwards;
+}
+
+.txt-dynamic3_white::after {
+  width: 0.125em;
+  background-color: transparent;
+  animation: blink2 var(--blinkInterval) steps(var(--typingCharacters2)) var(--typingDelay3) infinite,
+      typingFade var(--typingSpeed) steps(var(--typingCharacters3)) var(--typingDelay3) forwards;
+}
+
+@keyframes typing {
+  to {
+      left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+      background: transparent;
+  }
+}
+
+@keyframes blink2 {
+  from {
+      background-color: var(--green);
+  }
+  to {
+      background-color: transparent;
+  }
+}
+
+@keyframes typingFade {
+  to {
+      left: 100%;
+      background-color: transparent;
+  }
+}
+
+.txt-intro {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px 0px 0px;
+  margin: 0px;
+}
+
+.arrowResponsive {
+  /* placeholder */
+}
+
+@media (max-width: 1458px) {
+  .div-home {
+      flex-direction: column;
+  }
+
+  .txt-intro {
+      align-items: center;
+  }
+
+  .div-home {
+      padding: 20px 0px 0px 0px;
+  }
+
+  .txt-intro {
+      padding: 20px 0px 0px 0px;
+  }
+
+  .img-profile {
+      height: 300px;
+      width: 200px;
+  }
+
+  .arrowResponsive {
+      margin-top: -75px;
+  }
+}
+
+@media (max-width: 1458px) and (max-height: 800px) {
+  .div-contact {
+      margin: 0px;
+  }
+}
+
+@media (max-width: 1458px) and (max-height: 730px) {
+  .img-profile {
+      height: 200px;
+      width: 150px;
+  }
+}
+
+@media (max-width: 1458px) and (max-height: 630px) {
+  .div-dropDownArrow {
+      padding-top: 65px;
+  }
+}
+
+@media (min-width: 1458px) and (max-height: 700px) {
+  .div-dropDownArrow {
+      padding-top: 5px;
+  }
+}
+
+@media (max-width: 545px) {
+  .txt-dynamic {
+      font-size: 26px;
+  }
+
+  .txt-dynamic2 {
+      font-size: 26px;
+  }
+
+  .txt-dynamic3 {
+      font-size: 26px;
+  }
+
+  .img-profile {
+      width: 250px;
+  }
+}
+
+@media (max-width: 345px) {
+  .img-profile {
+      width: 270px;
+      height: 400px;
+  }
+}
