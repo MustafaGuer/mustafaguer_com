@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/shared/scss/colors.scss';
 @import './app/shared/scss/sizes.scss';
+@import './app/shared/scss/usable.scss';
 
 * {
   box-sizing: border-box;
@@ -28,21 +29,4 @@ html, body {
 *::-webkit-scrollbar-thumb {
   background-color: $scrollbar;
   border-radius: $scrollbarBorderRadius;
-}
-
-// Custom Classes
-
-.container {
-  padding-right: 160px;
-  padding-left: 160px;
-}
-
-.bg-dark {
-  background-color: $darkbackground;
-  transition: background-color 225ms ease-in-out;
-}
-
-.bg-light {
-  background-color: $lightbackground;
-  transition: background-color 225ms ease-in-out;
 }

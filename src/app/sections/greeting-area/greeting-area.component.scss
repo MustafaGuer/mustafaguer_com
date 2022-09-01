@@ -7,6 +7,11 @@
   position: relative;
 }
 
+canvas {
+  max-height: 100vh;
+  width: calc(100vw - 8px);
+}
+
 .greetingAreaBox {
   position: absolute;
   top: 0;
@@ -15,145 +20,131 @@
   left: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .headline {
   font-size: 3rem;
   white-space: pre-wrap;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: $red;
+  color: $lighttext;
+  text-align: center;
 
   @media (max-width: 576px) {
     font-size: 2.5rem;
   }
 }
 
-.imgBox {
-  width: 450px;
-  height: 450px;
+.pillBox {
+  display: flex;
+  justify-content: center;
 
-  @media(max-width: 992px) {
-    width: 350px;
-    height: 350px;
-  }
+  .pulser {
+    animation: pillsPulser 1s infinite linear;
 
-  @media (max-width: 576px) {
-    & {
-      width: 200px;
-      height: 200px;
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes pillsPulser {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
   }
-}
 
-.hacker {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top;
-  opacity: 0.85;
-}
-
-.pulser {
-  animation: pillsPulser 1s infinite linear;
-
-  &:hover {
-    animation-play-state: paused;
-  }
-
-  @keyframes pillsPulser {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-}
-
-.matrixButton {
-  border-radius: 100%;
-  width: 32px;
-  height: 32px;
-  opacity: 0.8;
-}
-
-.bluePill {
-  animation: bluePillTranslate 750ms ease-in-out;
-
-  img {
+  .matrixPill {
+    border-radius: 100%;
     width: 32px;
     height: 32px;
-  }
-  @keyframes bluePillTranslate {
-    from {
-      transform: translate(-20px, -25px);
-    }
-    to {
-      transform: translate(0, 0);
-    }
-  }
-}
-
-.redPill {
-  animation: redPillTranslate 750ms ease-in-out;
-
-  @keyframes redPillTranslate {
-    from {
-      transform: translateY(-40px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-}
-
-.greenPill {
-  animation: greenPillTranslate 750ms ease-in-out;
-
-  @keyframes greenPillTranslate {
-    from {
-      transform: translate(20px, -25px);
-    }
-    to {
-      transform: translate(0, 0);
-    }
-  }
-}
-.whoamiRed {
-  color: $red;
-}
-
-.whoamiGreen {
-  color: $green;
-}
-
-.whoamiBlue {
-  color: $blue;
-}
-
-.arrowDown {
-  width: 64px;
-  animation: arrowUpAndDown 500ms infinite linear;
-
-  &:hover {
-    animation-play-state: paused;
+    opacity: 0.8;
   }
 
-  @keyframes arrowUpAndDown {
-    from {
-      transform: translateY(-8px);
+  .bluePill {
+    animation: bluePillTranslate 750ms ease-in-out;
+
+    img {
+      width: 32px;
+      height: 32px;
     }
-    to {
-      transform: translateY(0);
+    @keyframes bluePillTranslate {
+      from {
+        transform: translate(-20px, -25px);
+      }
+      to {
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+  .redPill {
+    animation: redPillTranslate 750ms ease-in-out;
+
+    @keyframes redPillTranslate {
+      from {
+        transform: translateY(-40px);
+      }
+      to {
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  .greenPill {
+    animation: greenPillTranslate 750ms ease-in-out;
+
+    @keyframes greenPillTranslate {
+      from {
+        transform: translate(20px, -25px);
+      }
+      to {
+        transform: translate(0, 0);
+      }
     }
   }
 }
 
-canvas {
-  max-height: 100vh;
-  width: calc(100vw - 8px);
+.arrowBox {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .whoamiRed {
+    color: $red;
+  }
+
+  .whoamiGreen {
+    color: $green;
+  }
+
+  .whoamiBlue {
+    color: $blue;
+  }
+
+  .arrowDown {
+    width: 64px;
+    animation: arrowUpAndDown 500ms infinite linear;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes arrowUpAndDown {
+      from {
+        transform: translateY(-8px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
 }

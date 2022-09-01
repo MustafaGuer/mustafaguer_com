@@ -1,5 +1,5 @@
 import { TranslateService } from '@ngx-translate/core';
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener, OnDestroy } from '@angular/core';
 import { engHeadline, deHeadline, trHeadline } from 'src/app/shared/const/headlines';
 import { MatrixService } from 'src/app/shared/service/matrix/matrix.service';
 import { MatrixLetterColors } from 'src/app/shared/enum/matrix-letter-colors';
@@ -11,7 +11,7 @@ import { greenArrowPath, redArrowPath, blueArrowPath, bluePillPath, greenPillPat
   templateUrl: './greeting-area.component.html',
   styleUrls: ['./greeting-area.component.scss']
 })
-export class GreetingAreaComponent implements OnInit, AfterViewInit {
+export class GreetingAreaComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public matrixLetterColors: any = MatrixLetterColors;
   public languages: any = Languages;
@@ -84,6 +84,10 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit {
     clearTimeout(this.headlineTimerId);
     this.headlineLetterIndex = 0;
     this.loadHeadline();
+  }
+
+  ngOnDestroy(): void {
+    this.headlineTimerId.unsubscribe();
   }
 
 }

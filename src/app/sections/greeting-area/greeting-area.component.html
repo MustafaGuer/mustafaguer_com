@@ -4,56 +4,42 @@
 
   <div class="greetingAreaBox container">
     <div class="">
-      <div class="">
-        <div class="">
-          <ng-container *ngTemplateOutlet="pills"></ng-container>
-          <h1 class="headline" id="headline"></h1>
-        </div>
-        <ng-container *ngTemplateOutlet="arrow"></ng-container>
-      </div>
-      <div class="" >
-        <ng-container *ngTemplateOutlet="profleImg"></ng-container>
-      </div>
+      <ng-container *ngTemplateOutlet="pills"></ng-container>
+      <h1 class="headline" id="headline"></h1>
     </div>
   </div>
 
+  <ng-container *ngTemplateOutlet="arrow"></ng-container>
 </div>
 
 <ng-template #pills>
-  <div class="">
-    <div class="pulser">
-      <img class="matrixButton bluePill" role="button" (click)="changeMatrixColor(matrixLetterColors.BLUE)"
+  <div class="pillBox">
+    <div class="pulser cursor">
+      <img class="matrixPill bluePill" role="button" (click)="changeMatrixColor(matrixLetterColors.BLUE)"
         [src]="bluePill" alt="{{'bluepill' | translate}}">
     </div>
-    <div class="pulser">
-      <img class="matrixButton redPill " role="button" (click)="changeMatrixColor(matrixLetterColors.RED)"
-        [src]="redPill" alt="{{'redpill' | translate}}">
+    <div class="pulser cursor">
+      <img class="matrixPill redPill " role="button" (click)="changeMatrixColor(matrixLetterColors.RED)" [src]="redPill"
+        alt="{{'redpill' | translate}}">
     </div>
-    <div class="pulser">
-      <img class="matrixButton greenPill" role="button" (click)="changeMatrixColor(matrixLetterColors.GREEN)"
+    <div class="pulser cursor">
+      <img class="matrixPill greenPill" role="button" (click)="changeMatrixColor(matrixLetterColors.GREEN)"
         [src]="greenPill" alt="{{'greenpill' | translate}}">
     </div>
   </div>
 </ng-template>
 
-
 <ng-template #arrow>
-  <div class="">
+  <div class="arrowBox">
     <h3 [ngClass]="matrixService.activeLetterColor == matrixLetterColors.GREEN ? 'whoamiGreen': '' ||
       matrixService.activeLetterColor == matrixLetterColors.RED ? 'whoamiRed':'' ||
       matrixService.activeLetterColor == matrixLetterColors.BLUE ? 'whoamiBlue':''" data-aos="fade-in"
       data-aos-offset="0">${{'whoami' | translate}}</h3>
     <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.GREEN" data-aos="zoom-in" data-aos-offset="0"
-      class="arrowDown" role="button" alt="Arrow Down" src="{{ greenArrow }}">
-    <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.RED" data-aos="zoom-in" class="arrowDown"
+      class="arrowDown cursor" role="button" alt="Arrow Down" src="{{ greenArrow }}">
+    <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.RED" data-aos="zoom-in" class="arrowDown cursor"
       data-aos-offset="0" role="button" alt="Arrow Down" src="{{ redArrow }}">
-    <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.BLUE" data-aos="zoom-in" class="arrowDown"
+    <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.BLUE" data-aos="zoom-in" class="arrowDown cursor"
       data-aos-offset="0" role="button" alt="Arrow Down" src="{{ blueArrow }}">
-  </div>
-</ng-template>
-
-<ng-template #profleImg>
-  <div class="imgBox">
-    <img class="hacker" src="../../../assets/img/hacker.jpg" />
   </div>
 </ng-template>
