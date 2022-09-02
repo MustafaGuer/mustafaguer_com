@@ -19,6 +19,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { ContactFormComponent } from './sections/contact-form/contact-form.component';
 import { SkillStackComponent } from './sections/skill-stack/skill-stack.component';
 import { FooterComponent } from './sections/shared/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -52,6 +53,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     BrowserAnimationsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
