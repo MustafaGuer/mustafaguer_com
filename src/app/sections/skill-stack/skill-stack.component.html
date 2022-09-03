@@ -1,17 +1,17 @@
-<div class="">
-  <h3 class="">{{'skillstack' | translate}}</h3>
-  <div class="skillStackContainer">
+<div class="d-flex flex-column align-items-center">
+  <h3 class="text-center">{{'skillstack' | translate}}</h3>
+  <div class="skillStackContainer w-50 d-flex justify-content-center flex-wrap">
     <ng-container *ngTemplateOutlet="skillStackImgs"></ng-container>
   </div>
 </div>
 
 <ng-template #skillStackImgs>
-  <div *ngFor="let skill of skillStack" class="skillImgContainer" data-aos="fade-left"
+  <div *ngFor="let skill of skillStack; let i = index;" class="skillImgContainer d-flex flex-column justify-content-between m-3" data-aos="zoom-in" [attr.data-aos-delay]="skill.delay"
     [attr.data-aos-offset]="skillsOffset">
-    <div class="skillImgBox">
+    <div class="skillImgBox d-flex justify-content-center">
       <img src="{{skill.url}}">
     </div>
-    <div class="skillText">
+    <div class="skillText text-center">
       <h5>{{skill.name}}</h5>
       <p>{{skill.rate}}/10 &#9733;</p>
     </div>
