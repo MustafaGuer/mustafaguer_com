@@ -1,6 +1,5 @@
 import { BgService } from './../../../shared/service/background/bg.service';
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { sun, moon } from 'src/app/shared/const/paths';
 
 @Component({
