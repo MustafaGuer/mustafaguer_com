@@ -1,5 +1,7 @@
+import { BgService } from './../../../shared/service/background/bg.service';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { sun, moon } from 'src/app/shared/const/paths';
 
 @Component({
   selector: 'app-header',
@@ -12,23 +14,16 @@ export class HeaderComponent implements OnInit {
   public collapse: boolean = false;
   public expanded: boolean = false;
   public isMenuCollapsed: boolean = true;
-  public selectOpen: boolean = false;
+  public sunImg = sun;
+  public moonImg = moon;
 
-  constructor(public translate: TranslateService) { }
+  constructor(public bgService: BgService) { }
 
   ngOnInit(): void {
   }
 
   public toggleMenu() {
     this.opened = !this.opened;
-  }
-
-  public setLangToGer() {
-    this.translate.use('de');
-  }
-
-  public setLangToEng() {
-    this.translate.use('en');
   }
 
   public toggleCollapse(): void {

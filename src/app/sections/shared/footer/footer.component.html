@@ -1,6 +1,11 @@
 <footer class="">
   <div class="container">
     <span>Copyright</span>
+    <select #langSelect (click)="selectOpen = !selectOpen" (change)="translate.use(langSelect.value)"
+            class="form-select cursor lang-select" [ngClass]="selectOpen ? 'open-select' : ''">
+            <option class="c-pointer" *ngFor="let lang of translate.getLangs()"
+              [selected]="lang === translate.currentLang" [value]="lang">{{ lang }}</option>
+          </select>
     <div>
       <a class="" routerLink="/imprint">Imprint</a>
       <a class="" routerLink="/privacy">Privacy Policy</a>

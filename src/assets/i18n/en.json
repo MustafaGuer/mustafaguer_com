@@ -29,5 +29,13 @@
     "emailPlaceholder": "Your email address.",
     "messagePlaceholder": "Your Message.",
     "send": "Send Message"
+  },
+  "navbar": {
+    "headline": "MusG",
+    "home": "home",
+    "about": "about",
+    "skills": "skills",
+    "portfolio": "portfolio",
+    "contact": "contact"
   }
 }
