@@ -1,5 +1,5 @@
-<div [ngClass]="bgService.light ? 'bg-light':'bg-dark'" class="d-flex flex-column align-items-center">
-  <h3 class="text-center">{{'skillstack' | translate}}</h3>
+<div [ngClass]="bgService.light ? 'bg-light':'bg-dark'" class="d-flex flex-column align-items-center pt-5">
+  <h3 [ngClass]="bgService.light ? 'text-dark': 'text-light'" class="text-center mb-5">{{'skillstack' | translate}}</h3>
   <div class="skillStackContainer w-50 d-flex justify-content-center flex-wrap">
     <ng-container *ngTemplateOutlet="skillStackImgs"></ng-container>
   </div>
@@ -7,6 +7,7 @@
 
 <ng-template #skillStackImgs>
   <div *ngFor="let skill of skillStack; let i = index;"
+    [ngClass]="!bgService.light ? 'bg-light shadow-light' : 'shadow'"
     class="skillImgContainer d-flex flex-column justify-content-between m-3"
     [attr.data-aos]="skill.animation"
     [attr.data-aos-delay]="defaultDelay"
