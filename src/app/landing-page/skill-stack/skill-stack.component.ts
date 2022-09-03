@@ -1,3 +1,4 @@
+import { BgService } from './../../shared/service/background/bg.service';
 import { Component, OnInit } from '@angular/core';
 import { Skills } from './../../shared/interfaces/skills';
 import { skillsStack } from 'src/app/shared/const/skillStack';
@@ -10,11 +11,23 @@ import { skillsStack } from 'src/app/shared/const/skillStack';
 export class SkillStackComponent implements OnInit {
 
   public skillStack: Skills[] = skillsStack;
-  public skillsOffset: string = '200';
+  public defaultOffset: string = '200';
+  public defaultDelay: string = '200';
+  public defaultAnchorPlacement: string = 'bottom-bottom';
 
-  constructor() { }
+  constructor(public bgService: BgService) { }
 
   ngOnInit(): void {
+    this.setAnimation();
+
+  }
+
+  private setAnimation(): void {
+    this.skillStack.forEach((skill, index) => this.isEven(index) ? skill.animation = 'fade-down-right' : skill.animation = 'fade-down-left');
+  }
+
+  private isEven(n: number): boolean {
+    return n % 2 == 0;
   }
 
 }

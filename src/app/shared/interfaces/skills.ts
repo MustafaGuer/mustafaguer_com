@@ -3,4 +3,6 @@ export interface Skills {
   url: string;
   rate: number;
   delay: string;
+  animation: string;
+  offset: string;
 }
