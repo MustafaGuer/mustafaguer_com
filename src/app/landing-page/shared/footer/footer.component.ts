@@ -1,3 +1,4 @@
+import { MatrixService } from 'src/app/shared/service/matrix/matrix.service';
 import { Languages } from 'src/app/shared/enum/languages';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
@@ -12,8 +13,8 @@ export class FooterComponent implements OnInit {
   public selectOpen: boolean = false;
   public year: Date = new Date();
   public languages = Languages;
-  
-  constructor(public translate: TranslateService) { }
+
+  constructor(public translate: TranslateService, public matrixService: MatrixService) { }
 
   ngOnInit(): void {
   }

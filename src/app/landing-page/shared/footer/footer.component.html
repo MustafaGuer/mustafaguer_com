@@ -9,8 +9,8 @@
         <span class="mx-2" type="button" (click)="setToLang('tr')">TR</span>
       </div>
       <div>
-        <a class="link-light text-decoration-none mx-2" routerLink="/imprint">{{ 'imprint.imprint' | translate }}</a>
-        <a class="link-light text-decoration-none mx-2" routerLink="/privacy">Privacy Policy</a>
+        <a class="link-light text-decoration-none mx-2" (click)="matrixService.clearCanvas()" routerLink="/imprint">{{ 'imprint.imprint' | translate }}</a>
+        <a class="link-light text-decoration-none mx-2" (click)="matrixService.clearCanvas()" routerLink="/privacy">Privacy Policy</a>
       </div>
     </div>
   </nav>

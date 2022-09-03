@@ -67,6 +67,10 @@ export class MatrixService {
     this.initMatrix(canvas, color);
   }
 
+  public clearCanvas(): void {
+    clearInterval(this.intervalId);
+  }
+
   public resizeCtx(canvas: ElementRef, ) {
     clearInterval(this.intervalId);
 

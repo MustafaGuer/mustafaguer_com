@@ -11,7 +11,7 @@ import { skillsStack } from 'src/app/shared/const/skillStack';
 export class SkillStackComponent implements OnInit {
 
   public skillStack: Skills[] = skillsStack;
-  public defaultOffset: string = '200';
+  public defaultOffset: string = '150';
   public defaultDelay: string = '200';
   public defaultAnchorPlacement: string = 'bottom-bottom';
 
