@@ -5,20 +5,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './sections/shared/header/header.component';
-import { LandingPageComponent } from './sections/landing-page/landing-page.component';
-import { GreetingAreaComponent } from './sections/greeting-area/greeting-area.component';
+import { HeaderComponent } from './landing-page/shared/header/header.component';
+import { LandingPageComponent } from './landing-page/sections/landing-page.component';
+import { GreetingAreaComponent } from './landing-page/greeting-area/greeting-area.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { ImprintComponent } from './pages/imprint/imprint.component';
-import { AboutAreaComponent } from './sections/about-area/about-area.component';
-import { ProjectsComponent } from './sections/projects/projects.component';
+import { AboutAreaComponent } from './landing-page/about-area/about-area.component';
+import { ProjectsComponent } from './landing-page/projects/projects.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
-import { ContactFormComponent } from './sections/contact-form/contact-form.component';
-import { SkillStackComponent } from './sections/skill-stack/skill-stack.component';
-import { FooterComponent } from './sections/shared/footer/footer.component';
+import { ContactFormComponent } from './landing-page/contact-form/contact-form.component';
+import { SkillStackComponent } from './landing-page/skill-stack/skill-stack.component';
+import { FooterComponent } from './landing-page/shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // AoT requires an exported function for factories
