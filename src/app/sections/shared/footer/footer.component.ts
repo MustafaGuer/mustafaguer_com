@@ -1,3 +1,4 @@
+import { Languages } from 'src/app/shared/enum/languages';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -9,18 +10,16 @@ import { TranslateService } from '@ngx-translate/core';
 export class FooterComponent implements OnInit {
 
   public selectOpen: boolean = false;
-
+  public year: Date = new Date();
+  public languages = Languages;
+  
   constructor(public translate: TranslateService) { }
 
   ngOnInit(): void {
   }
 
-  public setLangToGer() {
-    this.translate.use('de');
-  }
-
-  public setLangToEng() {
-    this.translate.use('en');
+  public setToLang(lang: string) {
+    this.translate.use(lang);
   }
 
 }

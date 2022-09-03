@@ -87,7 +87,7 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.headlineTimerId.unsubscribe();
+    clearTimeout(this.headlineTimerId);
   }
 
 }

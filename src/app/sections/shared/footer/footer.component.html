@@ -1,19 +1,15 @@
-<footer class="">
+<footer>
   <nav class="navbar bg-dark text-light">
     <div class="container-fluid">
-      <span>&copy; Mustafa Gür 2022</span>
+      <span>&copy; {{ 'imprint.firstName' | translate }} {{ 'imprint.lastName' | translate }} {{ year | date:'YYYY'
+        }}</span>
       <div>
-        <span class="mx-2" type="button" (click)="translate.use('de')">DE</span>
-        <span class="mx-2" type="button" (click)="translate.use('en')">EN</span>
-        <span class="mx-2" type="button" (click)="translate.use('tr')">TR</span>
+        <span class="mx-2" type="button" (click)="setToLang('de')">DE</span>
+        <span class="mx-2" type="button" (click)="setToLang('en')">EN</span>
+        <span class="mx-2" type="button" (click)="setToLang('tr')">TR</span>
       </div>
-      <!-- <select #langSelect (click)="selectOpen = !selectOpen" (change)="translate.use(langSelect.value)"
-        class="form-select cursor lang-select" [ngClass]="selectOpen ? 'open-select' : ''">
-        <option class="c-pointer" *ngFor="let lang of translate.getLangs()" [selected]="lang === translate.currentLang"
-          [value]="lang">{{ lang }}</option>
-      </select> -->
       <div>
-        <a class="link-light text-decoration-none mx-2" routerLink="/imprint">Imprint</a>
+        <a class="link-light text-decoration-none mx-2" routerLink="/imprint">{{ 'imprint.imprint' | translate }}</a>
         <a class="link-light text-decoration-none mx-2" routerLink="/privacy">Privacy Policy</a>
       </div>
     </div>

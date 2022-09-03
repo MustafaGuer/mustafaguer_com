@@ -17,5 +17,22 @@
     "contact": "Kontakt:",
     "phone": "Telefon:",
     "email": "E-Mail:"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email Addresse",
+    "message": "Ihre Nachricht",
+    "namePlaceholder": "Ihr Namen ein.",
+    "emailPlaceholder": "Ihre Email.",
+    "messagePlaceholder": "Ihre Nachricht.",
+    "send": "Nachricht senden"
+  },
+  "navbar": {
+    "headline": "MusG",
+    "home": "home",
+    "about": "über mich",
+    "skills": "skills",
+    "portfolio": "portfolio",
+    "contact": "kontakt"
   }
 }

@@ -1,9 +1,10 @@
-<nav [ngClass]="bgService.light ? 'navbar-light bg-light':'navbar-dark bg-dark'" class="navbar navbar-expand-lg mb-3 position-sticky top-0 left-0 right-0">
+<nav [ngClass]="bgService.light ? 'navbar-light bg-light':'navbar-dark bg-dark'"
+  class="navbar navbar-expand-lg mb-3 position-sticky top-0 left-0 right-0">
   <div class="container-fluid">
     <a [ngClass]="bgService.light ? 'link-dark':'link-light'" class="navbar-brand" style="color: white;"
       [routerLink]="'.'">{{ 'navbar.headline' | translate}}</a>
 
-    <button (click)="isMenuCollapsed = !isMenuCollapsed" [ngClass]="!isMenuCollapsed ? 'is-active' : ''"
+    <button (click)="collapsed = !collapsed" [ngClass]="!collapsed ? 'is-active' : ''"
       class="hamburger hamburger--spin d-lg-none" type="button" aria-label="Menu" aria-controls="navigation"
       aria-expanded="true/false">
       <span class="hamburger-box">
@@ -12,7 +13,7 @@
       </span>
     </button>
 
-    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse flex-grow-0">
+    <div [ngbCollapse]="collapsed" class="collapse navbar-collapse flex-grow-0">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <span type="button" class="button bgButton" (click)="bgService.changeTheme()"><img
@@ -20,23 +21,23 @@
         </li>
         <li class="nav-item active">
           <a [ngClass]="bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
-            (click)="isMenuCollapsed = true">{{'navbar.home' | translate | titlecase}}</a>
+            (click)="collapsed = true">{{'navbar.home' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
-            (click)="isMenuCollapsed = true">{{'navbar.skills' | translate | titlecase}}</a>
+            (click)="collapsed = true">{{'navbar.skills' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
-            (click)="isMenuCollapsed = true">{{'navbar.portfolio' | translate | titlecase}}</a>
+            (click)="collapsed = true">{{'navbar.portfolio' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
-            (click)="isMenuCollapsed = true">{{'navbar.about' | translate | titlecase}}</a>
+            (click)="collapsed = true">{{'navbar.about' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
-            (click)="isMenuCollapsed = true">{{'navbar.contact' | translate | titlecase}}</a>
+            (click)="collapsed = true">{{'navbar.contact' | translate | titlecase}}</a>
         </li>
       </ul>
     </div>

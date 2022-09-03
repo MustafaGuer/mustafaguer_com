@@ -5,6 +5,10 @@
   background: $black;
   // width: calc(100vw - $scrollbarWidth * 2);
   position: relative;
+
+  @media(max-width: 576px) {
+    // height: min-content;
+  }
 }
 
 canvas {

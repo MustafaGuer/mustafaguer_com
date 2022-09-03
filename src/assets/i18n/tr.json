@@ -17,5 +17,22 @@
     "contact": "İletişim:",
     "phone": "Telefon:",
     "email": "E-posta:"
+  },
+  "contactForm": {
+    "name": "İsim",
+    "email": "Email adresi",
+    "message": "Mesaj",
+    "namePlaceholder": "İsminiz.",
+    "emailPlaceholder": "Email adresiniz.",
+    "messagePlaceholder": "Mesajınız.",
+    "send": "Mesajı gönder"
+  },
+  "navbar": {
+    "headline": "MusG",
+    "home": "home",
+    "about": "kimim",
+    "skills": "skills",
+    "portfolio": "portfolio",
+    "contact": "iletişim"
   }
 }

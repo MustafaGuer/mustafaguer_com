@@ -5,19 +5,6 @@
   display: inline-flex;
 }
 
-.form-select {
-  background-image: url("../../../../assets/icons/arrowDown.svg");
-  transition: background-image 225ms ease;
-}
-.form-select.open-select {
-  background-image: url("../../../../assets/icons/arrowUp.svg");
-  transition: background-image 225ms ease;
-}
-
-.lang-select {
-  max-width: 80px;
-}
-
 .hamburger-inner,
 .hamburger-inner.hamburger-inner-light {
   background-color: rgb(248, 249, 250) !important;
