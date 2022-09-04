@@ -4,27 +4,159 @@
   "about": "32 yaşındayım ve bir bilişim uzmanıyım. Son birkaç yıldır Münih'te kendi taksi limuzin servisimi işletiyorum. Pandemi sırasında tamamen köklerime dönmeye ve yazılım geliştirme projeleri üzerinde çalışmaya karar verdim. Son bir yıl içinde basit web sitelerinden karmaşık web uygulamalarına kadar çeşitli ön uç projeleri geliştirdim. Artık ön uç web geliştirme alanında yeni deneyimler arıyorum.",
   "skillstack": "Beceri Yığını",
   "imprint": {
-    "firstName": "Mustafa",
-    "lastName": "Gür",
+    "firstname": "Mustafa",
+    "lastname": "Gür",
     "street": "Werinher Caddesi No.12",
     "zip": "81541",
-    "mustafaEmail": "mustafaguer@yahoo.de",
-    "mustafaPhone": "+49 1762 489 9531",
+    "myemail": "mustafaguer@yahoo.de",
+    "myhone": "+49 1762 489 9531",
     "city": "Münih",
+    "country": "Germany",
     "imprint": "Künye",
-    "infoAccord": "TMG Madde 5 uyarınca bilgiler",
-    "represendetBy": "Tarafından temsil edilmektedir:",
+    "infoaccord": "TMG Madde 5 uyarınca bilgiler",
+    "represendetby": "Tarafından temsil edilmektedir:",
     "contact": "İletişim:",
     "phone": "Telefon:",
-    "email": "E-posta:"
+    "email": "E-posta:",
+    "imprintlink": "https://www.mustafaguer.com/imprint/"
   },
-  "contactForm": {
+  "privacy": {
+    "privacypolicytitle": "Gizlilik İlkeleri",
+    "redundant": {
+      "legalbasis": "Hukuki dayanak:",
+      "serviceprovider": "Hizmet sağlayıcısı:",
+      "privacypolicy": "Gizlilik İlkeleri:",
+      "website": "Web sitesi:",
+      "responsible": "Sorumlu:",
+      "purposeprocessing": "İşleme amaçları:",
+      "affectedpersons": "İlgili kişiler:",
+      "processeddata": "İşlenen veri türleri:",
+      "contactform": "İletişim formu:",
+      "deletiondata": "Veri silme:",
+      "furtherprocessing": "İşleme faaliyetleri, prosedürleri ve hizmetleri hakkında ilave notlar:"
+    },
+    "links": {
+      "fontsgoogle": "https://fonts.google.com/",
+      "googlepolicies": "https://policies.google.com/privacy",
+      "allinkl": "https://all-inkl.com/",
+      "allinklprivacy": "https://all-inkl.com/datenschutzinformationen/"
+    },
+    "legals": {
+      "dot": "Meşru menfaatler (Madde 6 paragraf 1 p. 1 lit. f) DSGVO).",
+      "semi": "Meşru menfaatler (Madde 6 paragraf 1 p. 1 lit. f) DSGVO);"
+    },
+    "introduction": {
+      "introduction": "Giriş",
+      "introductiontext": "Aşağıdaki veri koruma beyanı ile sizi işlediğimiz kişisel verilerinizin (bundan böyle \"veriler\" olarak da anılacaktır) türleri, hangi amaçlarla ve ne ölçüde işlediğimiz hakkında bilgilendirmek istiyoruz. Veri koruma beyanı, hem hizmetlerimizin sağlanmasının bir parçası olarak hem de özellikle web sitelerimizde, mobil uygulamalarımızda ve sosyal medya profillerimiz gibi harici çevrimiçi varlıklarda (bundan böyle toplu olarak \"Çevrimiçi Teklif\" olarak anılacaktır) tarafımızdan gerçekleştirilen tüm kişisel veri işleme faaliyetleri için geçerlidir.",
+      "gender": "Kullanılan terimler cinsiyete özgü değildir.",
+      "createdat": "Statü: 25 Ağustos 2022"
+    },
+    "contentoverview": {
+      "contentoverview": "İçindekiler bölümü",
+      "introduction": "Giriş",
+      "personincharge": "Sorumlu",
+      "processingoverview": "İşleme genel bakış",
+      "legalbases": "İlgili hukuki dayanaklar",
+      "safetymeasures": "Güvenlik tedbirleri",
+      "provision": "Çevrimiçi teklifin ve web barındırmanın sağlanması",
+      "contactrequest": "İletişim ve talep yönetimi",
+      "plugins": "Eklentiler ve gömülü işlevler ve içerik",
+      "definitions": "Terimlerin tanımları"
+    },
+    "processingoverview": {
+      "processingtext": "Aşağıdaki genel bakış, işlenen veri türlerini ve bunların işlenme amaçlarını özetler ve veri sahiplerine atıfta bulunur.",
+      "typesofdataprocessed": {
+        "typesofdataprocessed": "İşlenen veri türleri",
+        "contactdetails": "İletişim bilgileri.",
+        "contentdata": "İçerik verileri.",
+        "usagedata": "Kullanım verileri.",
+        "metadata": "Meta / iletişim verileri.",
+        "concernedcategories": {
+          "concernedcategories": "İlgili kişi kategorileri",
+          "communicationpartner": "İletişim ortağı.",
+          "users": "Kullanıcı"
+        },
+        "processingpurpose": {
+          "processingpurpose": "İşlemenin amaçları",
+          "service": "Sözleşmeye dayalı hizmetlerin ve müşteri hizmetlerinin sağlanması.",
+          "contact": "İletişim talepleri ve iletişim.",
+          "responding": "Talepleri yönetme ve yanıtlama.",
+          "feedback": "Geri bildirim.",
+          "userfriendliness": "Çevrimiçi teklifimizin sağlanması ve kullanıcı dostu olması.",
+          "infrastructure": "Bilgi teknolojisi altyapısı."
+        }
+      }
+    },
+    "legalbases": {
+      "legalbasestefirsttext": "Aşağıda, kişisel verileri işlediğimiz GDPR'nin yasal dayanaklarına genel bir bakış bulacaksınız. GDPR hükümlerine ek olarak, ikamet ettiğiniz veya ikamet ettiğimiz ülkede ulusal veri koruma düzenlemelerinin geçerli olabileceğini lütfen unutmayın. Münferit durumlarda daha spesifik yasal dayanakların söz konusu olması halinde, bunları veri koruma beyanında size bildireceğiz.",
+      "legalbaseslifirststrong": "Sözleşmenin ifası ve sözleşme öncesi sorular (Madde 6 paragraf 1 p. 1 lit. b) DSGVO)",
+      "legalbaseslifirst": " - İşleme, veri sahibinin taraf olduğu bir sözleşmenin ifası veya veri sahibinin talebi üzerine alınan sözleşme öncesi önlemlerin uygulanması için gereklidir.",
+      "legalbaseslisecondstrong": "Meşru menfaatler (Madde 6 paragraf 1 p. 1 lit. f) DSGVO)",
+      "legalbaseslisecond": " - Veri sahibinin kişisel verilerinin korunmasını gerektiren menfaatleri veya temel hak ve özgürlükleri tarafından bu menfaatlerin geçersiz kılındığı durumlar haricinde, veri işleme faaliyetinin kontrolörün veya üçüncü bir tarafın meşru menfaatleri için gerekli olması.",
+      "legalbasestextsecond": "Genel Veri Koruma Yönetmeliği'nin veri koruma düzenlemelerine ek olarak, Almanya'da veri korumaya ilişkin ulusal düzenlemeler de geçerlidir. Bunlar arasında özellikle Veri İşlemede Kişisel Verilerin Kötüye Kullanılmasına Karşı Koruma Yasası (Federal Veri Koruma Yasası - BDSG) yer almaktadır. BDSG özellikle bilgi edinme hakkı, silme hakkı, itiraz hakkı, özel kategorilerdeki kişisel verilerin işlenmesi, diğer amaçlarla işleme ve profil oluşturma da dahil olmak üzere bireysel durumlarda iletim ve otomatik karar verme konularında özel düzenlemeler içermektedir. Ayrıca, özellikle iş ilişkilerinin kurulması, uygulanması veya sona erdirilmesi ve çalışanların rızası ile ilgili olarak iş ilişkisi amacıyla veri işlemeyi düzenler (BDSG Bölüm 26). Ayrıca, münferit federal eyaletlerin veri koruma yasaları da geçerli olabilir."
+    },
+    "safetymeasures": {
+      "safetymeasuresfirsttext": "Yasal gerekliliklere uygun olarak riske uygun bir koruma düzeyi sağlamak için, teknolojinin durumunu, uygulama maliyetlerini ve işlemenin niteliği, kapsamı, koşulları ve amaçlarının yanı sıra farklı gerçekleşme olasılıklarını ve gerçek kişilerin hak ve özgürlüklerine yönelik tehdidin boyutunu dikkate alarak uygun teknik ve organizasyonel önlemleri alırız.",
+      "safetymeasuressecondtext": "Tedbirler özellikle verilere fiziksel ve elektronik erişimin yanı sıra verilere erişim, giriş, ifşa, kullanılabilirliğin güvence altına alınması ve verilerin ayrıştırılmasının kontrol edilmesi yoluyla verilerin gizliliğinin, bütünlüğünün ve kullanılabilirliğinin sağlanmasını içerir. Ayrıca, veri sahiplerinin haklarının kullanılmasını, verilerin silinmesini ve verilerin tehlikeye atılmasına yanıt verilmesini sağlamak için prosedürlerimiz bulunmaktadır. Ayrıca, veri koruma ilkesine uygun olarak donanım, yazılım ve prosedürlerin geliştirilmesi veya seçilmesinde, teknoloji tasarımı ve veri koruma dostu varsayılan ayarlar aracılığıyla kişisel verilerin korunmasını zaten dikkate alıyoruz.",
+      "safetymeasuresthirdtext": "SSL şifreleme (https): Çevrimiçi teklifimiz aracılığıyla iletilen verilerinizi korumak için SSL şifrelemesi kullanıyoruz. Bu tür şifrelenmiş bağlantıları tarayıcınızın adres satırındaki https:// önekinden tanıyabilirsiniz."
+    },
+    "provision": {
+      "provisiontext": "Kullanıcıların verilerini, onlara çevrimiçi hizmetlerimizi sunmak için işliyoruz. Bu amaçla, çevrimiçi hizmetlerimizin içeriğini ve işlevlerini kullanıcının tarayıcısına veya terminal cihazına iletmek için gerekli olan kullanıcının IP adresini işleriz.",
+      "provisionlifirst": "Kullanım verileri (örn. ziyaret edilen web siteleri, içeriğe ilgi, erişim süreleri); meta/iletişim verileri (örn. cihaz bilgileri, IP adresleri).",
+      "provisionlisecond": "Kullanıcılar (ör. web sitesi ziyaretçileri, çevrimiçi hizmet kullanıcıları).",
+      "provisionlithird": "Çevrimiçi teklifimizin sağlanması ve kullanıcı dostu olması; bilgi teknolojisi altyapısı (bilgi sistemlerinin ve teknik cihazların (bilgisayarlar, sunucular vb.) işletilmesi ve sağlanması); güvenlik önlemleri.",
+      "provisionlififthstrong": "Kiralanan depolama alanı için çevrimiçi teklif sağlanması:",
+      "provisionlififth": "Çevrimiçi teklifimizin sağlanması için, ilgili bir sunucu sağlayıcısından (\"web barındırıcısı\" olarak da anılır) kiraladığımız veya başka bir şekilde elde ettiğimiz depolama alanını, bilgi işlem kapasitesini ve yazılımı kullanırız.",
+      "provisionlisixtstrong": "Erişim verilerinin ve günlük dosyalarının toplanması:",
+      "provisionlisixt": "Çevrimiçi teklifimize erişim, \"sunucu günlük dosyaları\" olarak adlandırılan biçimde kaydedilir. Sunucu günlük dosyaları, erişilen web sayfalarının ve dosyaların adresini ve adını, erişim tarihini ve saatini, aktarılan veri miktarını, başarılı erişim bildirimini, tarayıcı türünü ve sürümünü, kullanıcının işletim sistemini, yönlendiren URL'yi (daha önce ziyaret edilen sayfa) ve kural olarak IP adreslerini ve talep eden sağlayıcıyı içerebilir. Sunucu günlük dosyaları, örneğin sunucuların aşırı yüklenmesini önlemek (özellikle DDoS saldırıları olarak adlandırılan kötü niyetli saldırılar durumunda) ve sunucuların kullanımını ve istikrarını sağlamak gibi güvenlik amaçları için kullanılabilir;",
+      "provisionlieight": " Günlük dosyası bilgileri en fazla 30 gün boyunca saklanır ve ardından silinir veya anonimleştirilir. Kanıtlayıcı amaçlar için daha fazla saklanması gereken veriler, ilgili olay nihai olarak açıklığa kavuşturulana kadar silinmekten muaftır.",
+      "provisionlininthstrong": "all-inkl:",
+      "provisionlininth": "Bilgi teknolojisi altyapısı ve ilgili hizmetlerin (örn. depolama alanı ve/veya bilgi işlem kapasiteleri) sağlanması alanındaki hizmetler;",
+      "provisionlitenth": "ALL-INKL.COM - Neue Medien Münnich, Sahibi: René Münnich, Hauptstraße 68, 02742 Friedersdorf, Almanya;",
+      "provisionlifourteenthStrong": "Sipariş işleme sözleşmesi:",
+      "provisionlifourteenth": "Hizmet sağlayıcı tarafından sağlanır."
+    },
+    "contactrequest": {
+      "contactrequesttextfirst": "Bizimle iletişime geçildiğinde (örn. iletişim formu, e-posta, telefon veya sosyal medya aracılığıyla) ve mevcut kullanıcı ve iş ilişkileri bağlamında, soru soran kişilerin bilgileri, iletişim sorularını ve talep edilen önlemleri yanıtlamak için gerekli olduğu ölçüde işlenir.",
+      "contactrequesttextsecond": "İletişim taleplerinin yanıtlanması ve sözleşmeye dayalı veya sözleşme öncesi ilişkiler çerçevesinde iletişim ve talep verilerinin yönetimi, sözleşmeden doğan yükümlülüklerimizi yerine getirmek veya (sözleşme öncesi) talepleri yanıtlamak için ve ayrıca talepleri yanıtlama ve kullanıcı veya iş ilişkilerini sürdürme konusundaki meşru menfaatler temelinde gerçekleştirilir.",
+      "contactrequestlifirst": "İletişim verileri (örn. e-posta, telefon numaraları); içerik verileri (örn. çevrimiçi formlardaki girişler); kullanım verileri (örn. ziyaret edilen web siteleri, içeriğe olan ilgi, erişim süreleri); meta/iletişim verileri (örn. cihaz bilgileri, IP adresleri).",
+      "contactrequestlisecond": "İletişim ortağı.",
+      "contactrequestlithird": "İletişim talepleri ve iletişim; talepleri yönetme ve yanıtlama; geri bildirim (örneğin çevrimiçi form aracılığıyla geri bildirim toplama); çevrimiçi teklifimizi ve kullanıcı deneyimimizi sağlama; sözleşmeye dayalı hizmetler ve müşteri hizmetleri sağlama.",
+      "contactrequestliffourth": "Sözleşmenin ifası ve sözleşme öncesi sorular (DSGVO Madde 6 paragraf 1 p. 1 lit. b); Meşru menfaatler (DSGVO Madde 6 paragraf 1 p. 1 lit. f)).",
+      "contactrequestlififth": "Kullanıcıların iletişim formumuz, e-posta veya diğer iletişim kanalları aracılığıyla bizimle iletişime geçmesi halinde, bu kapsamda tarafımıza iletilen verileri iletilen talebin işleme alınması amacıyla işlemekteyiz. Bu amaçla, kişisel verileri sözleşme öncesi ve sözleşmeye dayalı iş ilişkileri bağlamında, bunların yerine getirilmesi için gerekli olduğu ölçüde ve aksi takdirde meşru menfaatlerimizin yanı sıra iletişim ortaklarının endişelere yanıt verme menfaatleri ve yasal saklama yükümlülüklerimiz temelinde işleriz;",
+      "contactrequestlisixt": "Sözleşmenin yerine getirilmesi ve sözleşme öncesi sorular (DSGVO Madde 6 paragraf 1 p. 1 lit. b), Meşru Menfaatler (DSGVO Madde 6 paragraf 1 p. 1 lit. f))."
+    },
+    "plugins": {
+      "pluginsfirsttext": "Çevrimiçi teklifimize, ilgili sağlayıcılarının sunucularından (bundan böyle \"üçüncü taraf sağlayıcılar\" olarak anılacaktır) elde edilen işlevsel ve içerik öğelerini entegre ediyoruz. Bunlar örneğin grafikler, videolar veya şehir haritaları olabilir (bundan böyle tek tip olarak \"içerik\" olarak anılacaktır).",
+      "pluginssecondtext": "Entegrasyon her zaman bu içeriğin üçüncü taraf sağlayıcılarının kullanıcının IP adresini işlemesini gerektirir, çünkü IP adresi olmadan içeriği tarayıcılarına gönderemezler. Bu nedenle IP adresi, bu içeriğin veya işlevin görüntülenmesi için gereklidir. Yalnızca ilgili sağlayıcıların içeriği sunmak için yalnızca IP adresini kullandığı içeriği kullanmaya çalışıyoruz. Üçüncü taraf sağlayıcılar da istatistiksel veya pazarlama amaçlı olarak piksel etiketleri (\"web işaretçileri\" olarak da bilinen görünmez grafikler) kullanabilir. \"Piksel etiketleri\" bu web sitesinin sayfalarındaki ziyaretçi trafiği gibi bilgileri analiz etmek için kullanılabilir. Takma ad bilgileri ayrıca kullanıcının cihazındaki çerezlerde saklanabilir ve diğer şeylerin yanı sıra tarayıcı ve işletim sistemi hakkında teknik bilgiler, yönlendiren web siteleri, ziyaret zamanı ve çevrimiçi teklifimizin kullanımıyla ilgili diğer bilgileri içerebilir ve diğer kaynaklardan gelen bu tür bilgilerle bağlantılı olabilir.",
+      "pluginsliffirst": "Kullanım verileri (örn. ziyaret edilen web siteleri, içeriğe ilgi, erişim süreleri); meta/iletişim verileri (örn. cihaz bilgileri, IP adresleri).",
+      "pluginslisecond": "Kullanıcılar (ör. web sitesi ziyaretçileri, çevrimiçi hizmet kullanıcıları).",
+      "pluginslithird": "Çevrimiçi teklifimizin sağlanması ve kullanıcı dostu olması.",
+      "pluginslififthstrong": "Üçüncü taraf yazılımların, komut dosyalarının veya çerçevelerin entegrasyonu (örn. jQuery):",
+      "pluginslififth": "Diğer sağlayıcıların sunucularından aldığımız yazılımları çevrimiçi teklifimize entegre ediyoruz (örneğin, çevrimiçi teklifimizin sunumu veya kullanıcı dostu olması amacıyla kullandığımız işlev kütüphaneleri). Bunu yaparken, ilgili sağlayıcılar kullanıcının IP adresini toplar ve bunu yazılımın kullanıcının tarayıcısına iletilmesi ve güvenlik amaçlarının yanı sıra tekliflerinin değerlendirilmesi ve optimizasyonu amacıyla işleyebilir. - Diğer sağlayıcıların sunucularından aldığımız yazılımları çevrimiçi teklifimize entegre ediyoruz (örneğin, çevrimiçi teklifimizin sunumu veya kullanıcı dostu olması amacıyla kullandığımız işlev kütüphaneleri). İlgili sağlayıcılar kullanıcının IP adresini toplar ve bunu yazılımın kullanıcının tarayıcısına iletilmesi ve güvenlik amaçlarının yanı sıra tekliflerinin değerlendirilmesi ve optimizasyonu amacıyla işleyebilir;",
+      "pluginsliseventhstrong": "Google Fonts (Google sunucusundan alınır):",
+      "pluginsliseventh": "Yazı tiplerinin (ve sembollerin) teknik açıdan güvenli, bakım gerektirmeyen ve verimli bir şekilde kullanılması amacıyla yazı tiplerinin ve sembollerin güncelliği ve yükleme süreleri, tek tip görüntülenmeleri ve lisans yasası kapsamındaki olası kısıtlamaların dikkate alınması. Yazı tiplerinin sağlayıcısı kullanıcının IP adresinden haberdar edilir, böylece yazı tipleri kullanıcının tarayıcısında kullanılabilir hale getirilebilir. Ayrıca, kullanılan cihazlara ve teknik ortama bağlı olarak yazı tiplerinin sağlanması için gerekli olan teknik veriler (dil ayarları, ekran çözünürlüğü, işletim sistemi, kullanılan donanım) iletilir;",
+      "pluginslieigth": "Google Irland Limited, Gordon House, Barrow Street, Dublin 4, Irland, Mutterunternehmen: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA;",
+      "pluginslitwelthstrong": "Google Fonts (Bereitstellung auf eigenem Server):",
+      "pluginslitwelth": "yazı tipleri (\"Google Fonts\") çevrimiçi teklifimizin kullanıcı dostu bir şekilde sunulması amacıyla;",
+      "pluginslithirteenth": "Google Yazı Tipleri sunucumuzda barındırılır, Google'a hiçbir veri iletilmez;"
+    },
+    "definitions": {
+      "definitionsfirsttext": "Bu bölüm, bu gizlilik politikasında kullanılan terimlere genel bir bakış sağlar. Terimlerin çoğu kanundan alınmış ve özellikle GDPR'nin 4. Maddesinde tanımlanmıştır. Yasal tanımlar bağlayıcıdır. Aşağıdaki açıklamalar ise öncelikle bunları anlamanıza yardımcı olmayı amaçlamaktadır. Terimler alfabetik olarak sıralanmıştır.",
+      "definitionslifirststrong": "Kişisel veriler:",
+      "definitionslifirst": "\"Kişisel veri\", tanımlanmış veya tanımlanabilir bir gerçek kişiye (bundan böyle \"veri sahibi\" olarak anılacaktır) ilişkin her türlü bilgi anlamına gelir; tanımlanabilir gerçek kişi, doğrudan veya dolaylı olarak, özellikle bir isim, kimlik numarası, konum verileri, çevrimiçi bir tanımlayıcı (örn. çerez) gibi bir tanımlayıcıya veya söz konusu gerçek kişinin fiziksel, fizyolojik, genetik, zihinsel, ekonomik, kültürel veya sosyal kimliğine özgü bir veya daha fazla faktöre atıfta bulunularak tanımlanabilen kişidir.",
+      "definitionslisecond": "Kontrolör: kişisel verilerin işlenme amaçlarını ve araçlarını tek başına veya diğerleriyle birlikte belirleyen gerçek veya tüzel kişi, kamu otoritesi, kurum veya diğer organ anlamına gelir.",
+      "definitionslithirdstrong": "İşleme:",
+      "definitionslithird": "\"İşleme\", otomatik yollarla olsun ya da olmasın, kişisel veriler üzerinde gerçekleştirilen herhangi bir işlem ya da işlemler dizisi anlamına gelmektedir. Bu terim oldukça geniştir ve verilerin toplanması, analizi, depolanması, iletilmesi veya silinmesi gibi hemen her türlü işlemi kapsar."
+    }
+  },
+  "contactform": {
     "name": "İsim",
     "email": "Email adresi",
     "message": "Mesaj",
-    "namePlaceholder": "İsminiz.",
-    "emailPlaceholder": "Email adresiniz.",
-    "messagePlaceholder": "Mesajınız.",
+    "nameplaceholder": "İsminiz.",
+    "emailplaceholder": "Email adresiniz.",
+    "messageplaceholder": "Mesajınız.",
     "send": "Mesajı gönder"
   },
   "navbar": {

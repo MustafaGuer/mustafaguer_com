@@ -1,4 +1,4 @@
-<div class="greetingAreaContainer">
+<div id="greeting" class="greetingAreaContainer">
 
   <canvas #myCanvas></canvas>
 
@@ -33,11 +33,11 @@
       matrixService.activeLetterColor == matrixLetterColors.RED ? 'whoamiRed':'' ||
       matrixService.activeLetterColor == matrixLetterColors.BLUE ? 'whoamiBlue':''" data-aos="fade-in"
       data-aos-offset="0">${{'whoami' | translate}}</h3>
-    <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.GREEN" data-aos="zoom-in" data-aos-offset="0"
-      class="arrowDown cursor" role="button" alt="Arrow Down" src="{{ greenArrow }}">
-    <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.RED" data-aos="zoom-in" class="arrowDown cursor"
-      data-aos-offset="0" role="button" alt="Arrow Down" src="{{ redArrow }}">
-    <img *ngIf="matrixService.activeLetterColor == matrixLetterColors.BLUE" data-aos="zoom-in" class="arrowDown cursor"
-      data-aos-offset="0" role="button" alt="Arrow Down" src="{{ blueArrow }}">
+    <a href="#skillStack"><img *ngIf="matrixService.activeLetterColor == matrixLetterColors.GREEN" data-aos="zoom-in"
+        data-aos-offset="0" class="arrowDown cursor" role="button" alt="Arrow Down" src="{{ greenArrow }}"></a>
+    <a href="#skillStack"><img *ngIf="matrixService.activeLetterColor == matrixLetterColors.RED" data-aos="zoom-in"
+        class="arrowDown cursor" data-aos-offset="0" role="button" alt="Arrow Down" src="{{ redArrow }}"></a>
+    <a href="#skillStack"><img *ngIf="matrixService.activeLetterColor == matrixLetterColors.BLUE" data-aos="zoom-in"
+        class="arrowDown cursor" data-aos-offset="0" role="button" alt="Arrow Down" src="{{ blueArrow }}"></a>
   </div>
 </ng-template>

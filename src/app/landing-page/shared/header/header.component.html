@@ -17,23 +17,23 @@
     <div [ngbCollapse]="collapsed" class="collapse navbar-collapse flex-grow-0">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
+          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#greeting"
             (click)="collapsed = true">{{'navbar.home' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
-          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
+          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#skillStack"
             (click)="collapsed = true">{{'navbar.skills' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
-          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
+          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#portfolio"
             (click)="collapsed = true">{{'navbar.portfolio' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
-          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
+          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#about"
             (click)="collapsed = true">{{'navbar.about' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
-          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" [routerLink]="'.'"
+          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#contact"
             (click)="collapsed = true">{{'navbar.contact' | translate | titlecase}}</a>
         </li>
         <li class="nav-item active">

@@ -4,27 +4,159 @@
   "about": "Ich bin 32 Jahre alt und IT-Fachmann. In den letzten Jahren habe ich meinen eigenen Taxi-Limousinen-Service in München geleitet. Während der Pandemie entschied ich mich, wieder ganz zu meinen Wurzeln in der IT zurückzukehren und an Softwareentwicklungsprojekten zu arbeiten. So habe ich im letzten Jahr eine Vielzahl von Front-End-Projekten von einfachen Websites bis hin zu komplexen Web-Apps entwickelt. Jetzt suche ich nach neuen Herausforderungen in der Front-End-Webentwicklung.",
   "skillstack": "Skill Stack",
   "imprint": {
-    "firstName": "Mustafa",
-    "lastName": "Gür",
+    "firstname": "Mustafa",
+    "lastname": "Gür",
     "street": "Werinherstraße 12",
     "zip": "81541",
-    "mustafaEmail": "mustafaguer@yahoo.de",
-    "mustafaPhone": "+49 1762 489 9531",
+    "myemail": "mustafaguer@yahoo.de",
+    "myhone": "+49 1762 489 9531",
     "city": "München",
+    "country": "Deutschland",
     "imprint": "Impressum",
-    "infoAccord": "Angaben gemäß § 5 TMG",
-    "represendetBy": "Vertreten durch:",
+    "infoaccord": "Angaben gemäß § 5 TMG",
+    "represendetby": "Vertreten durch:",
     "contact": "Kontakt:",
     "phone": "Telefon:",
-    "email": "E-Mail:"
+    "email": "E-Mail:",
+    "imprintlink": "https://www.mustafaguer.com/imprint/"
   },
-  "contactForm": {
+  "privacy": {
+    "privacypolicytitle": "Gizlilik İlkeleri",
+    "redundant": {
+      "legalbasis": "Rechtsgrundlagen:",
+      "serviceprovider": "Dienstanbieter:",
+      "privacypolicy": "Datenschutzerklärung:",
+      "website": "Website:",
+      "responsible": "Verantwortlicher:",
+      "purposeprocessing": "Zwecke der Verarbeitung:",
+      "affectedpersons": "Betroffene Personen:",
+      "processeddata": "Verarbeitete Datenarten:",
+      "contactform": "Kontaktformular:",
+      "deletiondata": "Löschung von Daten:",
+      "furtherprocessing": "Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:"
+    },
+    "links": {
+      "fontsgoogle": "https://fonts.google.com/",
+      "googlepolicies": "https://policies.google.com/privacy",
+      "allinkl": "https://all-inkl.com/",
+      "allinklprivacy": "https://all-inkl.com/datenschutzinformationen/"
+    },
+    "legals": {
+      "dot": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).",
+      "semi": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);"
+    },
+    "introduction": {
+      "introduction": "Einleitung",
+      "introductiontext": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als \"Daten“ bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als \"Onlineangebot“).",
+      "gender": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
+      "createdat": "Stand: 25. August 2022"
+    },
+    "contentoverview": {
+      "contentoverview": "Inhaltsübersicht",
+      "introduction": "Einleitung",
+      "personincharge": "Verantwortlicher",
+      "processingoverview": "Übersicht der Verarbeitungen",
+      "legalbases": "Maßgebliche Rechtsgrundlagen",
+      "safetymeasures": "Sicherheitsmaßnahmen",
+      "provision": "Bereitstellung des Onlineangebotes und Webhosting",
+      "contactrequest": "Kontakt- und Anfragenverwaltung",
+      "plugins": "Plugins und eingebettete Funktionen sowie Inhalte",
+      "definitions": "Begriffsdefinitionen"
+    },
+    "processingoverview": {
+      "processingtext": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
+      "typesofdataprocessed": {
+        "typesofdataprocessed": "Arten der verarbeiteten Daten",
+        "contactdetails": "Kontaktdaten.",
+        "contentdata": "Inhaltsdaten.",
+        "usagedata": "Nutzungsdaten.",
+        "metadata": "Meta-/Kommunikationsdaten.",
+        "concernedcategories": {
+          "concernedcategories": "Kategorien betroffener Personen",
+          "communicationpartner": "Kommunikationspartner.",
+          "users": "Nutzer"
+        },
+        "processingpurpose": {
+          "processingpurpose": "Zwecke der Verarbeitung",
+          "service": "Erbringung vertraglicher Leistungen und Kundenservice.",
+          "contact": "Kontaktanfragen und Kommunikation.",
+          "responding": "Verwaltung und Beantwortung von Anfragen.",
+          "feedback": "Feedback.",
+          "userfriendliness": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.",
+          "infrastructure": "Informationstechnische Infrastruktur."
+        }
+      }
+    },
+    "legalbases": {
+      "legalbasestefirsttext": "Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO nationale Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.",
+      "legalbaseslifirststrong": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)",
+      "legalbaseslifirst": " - Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der betroffenen Person erfolgen.",
+      "legalbaseslisecondstrong": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)",
+      "legalbaseslisecond": " - Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten erforderlich, sofern nicht die Interessen oder Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten erfordern, überwiegen.",
+      "legalbasestextsecond": "Zusätzlich zu den Datenschutzregelungen der Datenschutz-Grundverordnung gelten nationale Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling. Des Weiteren regelt es die Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses (§ 26 BDSG), insbesondere im Hinblick auf die Begründung, Durchführung oder Beendigung von Beschäftigungsverhältnissen sowie die Einwilligung von Beschäftigten. Ferner können Landesdatenschutzgesetze der einzelnen Bundesländer zur Anwendung gelangen."
+    },
+    "safetymeasures": {
+      "safetymeasuresfirsttext": "Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmaßes der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.",
+      "safetymeasuressecondtext": "Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen und elektronischen Zugangs zu den Daten als auch des sie betreffenden Zugriffs, der Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des Weiteren haben wir Verfahren eingerichtet, die eine Wahrnehmung von Betroffenenrechten, die Löschung von Daten und Reaktionen auf die Gefährdung der Daten gewährleisten. Ferner berücksichtigen wir den Schutz personenbezogener Daten bereits bei der Entwicklung bzw. Auswahl von Hardware, Software sowie Verfahren entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen.",
+      "safetymeasuresthirdtext": "SSL-Verschlüsselung (https): Um Ihre via unserem Online-Angebot übermittelten Daten zu schützen, nutzen wir eine SSL-Verschlüsselung. Sie erkennen derart verschlüsselte Verbindungen an dem Präfix https:// in der Adresszeile Ihres Browsers."
+    },
+    "provision": {
+      "provisiontext": "Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur Verfügung stellen zu können. Zu diesem Zweck verarbeiten wir die IP-Adresse des Nutzers, die notwendig ist, um die Inhalte und Funktionen unserer Online-Dienste an den Browser oder das Endgerät der Nutzer zu übermitteln.",
+      "provisionlifirst": "Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten); Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).",
+      "provisionlisecond": "Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).",
+      "provisionlithird": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit; Informationstechnische Infrastruktur (Betrieb und Bereitstellung von Informationssystemen und technischen Geräten (Computer, Server etc.).); Sicherheitsmaßnahmen.",
+      "provisionlififthstrong": "Bereitstellung Onlineangebot auf gemietetem Speicherplatz:",
+      "provisionlififth": "Für die Bereitstellung unseres Onlineangebotes nutzen wir Speicherplatz, Rechenkapazität und Software, die wir von einem entsprechenden Serveranbieter (auch \"Webhoster\" genannt) mieten oder anderweitig beziehen",
+      "provisionlisixtstrong": "Erhebung von Zugriffsdaten und Logfiles:",
+      "provisionlisixt": "Der Zugriff auf unser Onlineangebot wird in Form von so genannten \"Server-Logfiles\" protokolliert. Zu den Serverlogfiles können die Adresse und Name der abgerufenen Webseiten und Dateien, Datum und Uhrzeit des Abrufs, übertragene Datenmengen, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite) und im Regelfall IP-Adressen und der anfragende Provider gehören. Die Serverlogfiles können zum einen zu Zwecken der Sicherheit eingesetzt werden, z.B., um eine Überlastung der Server zu vermeiden (insbesondere im Fall von missbräuchlichen Angriffen, sogenannten DDoS-Attacken) und zum anderen, um die Auslastung der Server und ihre Stabilität sicherzustellen;",
+      "provisionlieight": " Logfile-Informationen werden für die Dauer von maximal 30 Tagen gespeichert und danach gelöscht oder anonymisiert. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des jeweiligen Vorfalls von der Löschung ausgenommen.",
+      "provisionlininthstrong": "all-inkl:",
+      "provisionlininth": "Leistungen auf dem Gebiet der Bereitstellung von informationstechnischer Infrastruktur und verbundenen Dienstleistungen (z.B. Speicherplatz und/oder Rechenkapazitäten);",
+      "provisionlitenth": "ALL-INKL.COM - Neue Medien Münnich, Inhaber: René Münnich, Hauptstraße 68, 02742 Friedersdorf, Deutschland;",
+      "provisionlifourteenthStrong": "Auftragsverarbeitungsvertrag:",
+      "provisionlifourteenth": "Wird vom Dienstanbieter bereitgestellt."
+    },
+    "contactrequest": {
+      "contactrequesttextfirst": "Bei der Kontaktaufnahme mit uns (z.B. per Kontaktformular, E-Mail, Telefon oder via soziale Medien) sowie im Rahmen bestehender Nutzer- und Geschäftsbeziehungen werden die Angaben der anfragenden Personen verarbeitet soweit dies zur Beantwortung der Kontaktanfragen und etwaiger angefragter Maßnahmen erforderlich ist.",
+      "contactrequesttextsecond": "Die Beantwortung der Kontaktanfragen sowie die Verwaltung von Kontakt- und Anfragedaten im Rahmen von vertraglichen oder vorvertraglichen Beziehungen erfolgt zur Erfüllung unserer vertraglichen Pflichten oder zur Beantwortung von (vor)vertraglichen Anfragen und im Übrigen auf Grundlage der berechtigten Interessen an der Beantwortung der Anfragen und Pflege von Nutzer- bzw. Geschäftsbeziehungen.",
+      "contactrequestlifirst": "Kontaktdaten (z.B. E-Mail, Telefonnummern); Inhaltsdaten (z.B. Eingaben in Onlineformularen); Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten); Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).",
+      "contactrequestlisecond": "Kommunikationspartner.",
+      "contactrequestlithird": "Kontaktanfragen und Kommunikation; Verwaltung und Beantwortung von Anfragen; Feedback (z.B. Sammeln von Feedback via Online-Formular); Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit; Erbringung vertraglicher Leistungen und Kundenservice.",
+      "contactrequestliffourth": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO); Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).",
+      "contactrequestlififth": "Wenn Nutzer über unser Kontaktformular, E-Mail oder andere Kommunikationswege mit uns in Kontakt treten, verarbeiten wir die uns in diesem Zusammenhang mitgeteilten Daten zur Bearbeitung des mitgeteilten Anliegens. Zu diesem Zweck verarbeiten wir personenbezogene Daten im Rahmen vorvertraglicher und vertraglicher Geschäftsbeziehungen, soweit dies zu deren Erfüllung erforderlich ist und im Übrigen auf Grundlage unserer berechtigten Interessen sowie der Interessen der Kommunikationspartner an der Beantwortung der Anliegen und unserer gesetzlichen Aufbewahrungspflichten;",
+      "contactrequestlisixt": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO), Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+    },
+    "plugins": {
+      "pluginsfirsttext": "Wir binden in unser Onlineangebot Funktions- und Inhaltselemente ein, die von den Servern ihrer jeweiligen Anbieter (nachfolgend bezeichnet als \"Drittanbieter”) bezogen werden. Dabei kann es sich zum Beispiel um Grafiken, Videos oder Stadtpläne handeln (nachfolgend einheitlich bezeichnet als \"Inhalte”).",
+      "pluginssecondtext": "Die Einbindung setzt immer voraus, dass die Drittanbieter dieser Inhalte die IP-Adresse der Nutzer verarbeiten, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die IP-Adresse ist damit für die Darstellung dieser Inhalte oder Funktionen erforderlich. Wir bemühen uns, nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter können ferner sogenannte Pixel-Tags (unsichtbare Grafiken, auch als \"Web Beacons\" bezeichnet) für statistische oder Marketingzwecke verwenden. Durch die \"Pixel-Tags\" können Informationen, wie der Besucherverkehr auf den Seiten dieser Webseite, ausgewertet werden. Die pseudonymen Informationen können ferner in Cookies auf dem Gerät der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und zum Betriebssystem, zu verweisenden Webseiten, zur Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten als auch mit solchen Informationen aus anderen Quellen verbunden werden.",
+      "pluginsliffirst": "Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten); Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).",
+      "pluginslisecond": "Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).",
+      "pluginslithird": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.",
+      "pluginslififthstrong": "Einbindung von Drittsoftware, Skripten oder Frameworks (z. B. jQuery):",
+      "pluginslififth": "Wir binden in unser Onlineangebot Software ein, die wir von Servern anderer Anbieter abrufen (z.B. Funktions-Bibliotheken, die wir zwecks Darstellung oder Nutzerfreundlichkeit unseres Onlineangebotes verwenden). Hierbei erheben die jeweiligen Anbieter die IP-Adresse der Nutzer und können diese zu Zwecken der Übermittlung der Software an den Browser der Nutzer sowie zu Zwecken der Sicherheit, als auch zur Auswertung und Optimierung ihres Angebotes verarbeiten. - Wir binden in unser Onlineangebot Software ein, die wir von Servern anderer Anbieter abrufen (z.B. Funktions-Bibliotheken, die wir zwecks Darstellung oder Nutzerfreundlichkeit unseres Onlineangebotes verwenden). Hierbei erheben die jeweiligen Anbieter die IP-Adresse der Nutzer und können diese zu Zwecken der Übermittlung der Software an den Browser der Nutzer sowie zu Zwecken der Sicherheit, als auch zur Auswertung und Optimierung ihres Angebotes verarbeiten;",
+      "pluginsliseventhstrong": "Google Fonts (Bezug vom Google Server):",
+      "pluginsliseventh": "Bezug von Schriften (und Symbolen) zum Zwecke einer technisch sicheren, wartungsfreien und effizienten Nutzung von Schriften und Symbolen im Hinblick auf Aktualität und Ladezeiten, deren einheitliche Darstellung und Berücksichtigung möglicher lizenzrechtlicher Beschränkungen. Dem Anbieter der Schriftarten wird die IP-Adresse des Nutzers mitgeteilt, damit die Schriftarten im Browser des Nutzers zur Verfügung gestellt werden können. Darüber hinaus werden technische Daten (Spracheinstellungen, Bildschirmauflösung, Betriebssystem, verwendete Hardware) übermittelt, die für die Bereitstellung der Schriften in Abhängigkeit von den verwendeten Geräten und der technischen Umgebung notwendig sind;",
+      "pluginslieigth": "Google Irland Limited, Gordon House, Barrow Street, Dublin 4, Irland, Mutterunternehmen: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA;",
+      "pluginslitwelthstrong": "Google Fonts (Bereitstellung auf eigenem Server):",
+      "pluginslitwelth": "Schriftarten (\"Google Fonts\") zwecks einer nutzerfreundlichen Darstellung unseres Onlineangebotes;",
+      "pluginslithirteenth": "Die Google Fonts werden auf unserem Server gehostet, es werden keine Daten an Google übermittelt;"
+    },
+    "definitions": {
+      "definitionsfirsttext": "In diesem Abschnitt erhalten Sie eine Übersicht über die in dieser Datenschutzerklärung verwendeten Begrifflichkeiten. Viele der Begriffe sind dem Gesetz entnommen und vor allem im Art. 4 DSGVO definiert. Die gesetzlichen Definitionen sind verbindlich. Die nachfolgenden Erläuterungen sollen dagegen vor allem dem Verständnis dienen. Die Begriffe sind alphabetisch sortiert.",
+      "definitionslifirststrong": "Personenbezogene Daten:",
+      "definitionslifirst": "\"Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden \"betroffene Person“) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z.B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.",
+      "definitionslisecond": "Als \"Verantwortlicher“ wird die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet, bezeichnet.",
+      "definitionslithirdstrong": "Verarbeitung:",
+      "definitionslithird": "\"Verarbeitung\" ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten, sei es das Erheben, das Auswerten, das Speichern, das Übermitteln oder das Löschen."
+    }
+  },
+  "contactform": {
     "name": "Name",
     "email": "Email Addresse",
     "message": "Ihre Nachricht",
-    "namePlaceholder": "Ihr Namen ein.",
-    "emailPlaceholder": "Ihre Email.",
-    "messagePlaceholder": "Ihre Nachricht.",
+    "nameplaceholder": "Ihr Namen ein.",
+    "emailplaceholder": "Ihre Email.",
+    "messageplaceholder": "Ihre Nachricht.",
     "send": "Nachricht senden"
   },
   "navbar": {
