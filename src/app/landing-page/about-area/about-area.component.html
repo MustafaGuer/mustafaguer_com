@@ -1,34 +1,16 @@
-<div [ngClass]="bgService.light ? 'bg-light' : 'bg-dark'" class="box">
-  <div class="">
-    <div class="">
-      <div class="">
-        <ng-container *ngTemplateOutlet="whoami"></ng-container>
-      </div>
-      <div class="">
-        <h3>{{'skillstack' | translate}}</h3>
-        <div class="skillStackContainer">
-          <ng-container *ngTemplateOutlet="skillStackImgs"></ng-container>
-        </div>
-      </div>
-    </div>
-  </div>
+<div [ngClass]="bgService.light ? 'bg-light' : 'bg-dark'" class="box pt-5 mt-5">
+  <div [ngClass]="bgService.light ? 'text-dark' : 'text-light'" class="d-flex justify-content-center align-items-center flex-wrap">
+        <ng-container *ngTemplateOutlet="introImage"></ng-container>
+        <ng-container *ngTemplateOutlet="introText"></ng-container>
 </div>
 
-<ng-template #whoami>
-    <h5 class="" data-aos="fade-right">${{'whoami' | translate}}</h5>
-    <img class="profileImg" src="../../../assets/img/mustafa.jpg" alt="Profile Image" data-aos="fade-right">
-    <p class="" data-aos="fade-right" data-aos-offset="500">{{'about' | translate}}</p>
+<ng-template #introImage>
+  <div data-aos="fade-right" class="me-md-5">
+    <h5 class="text-center">${{'whoami' | translate}}</h5>
+    <img class="profileImg" src="../../../assets/img/mustafa.jpg" alt="Profile Image">
+  </div>
 </ng-template>
 
-<ng-template #skillStackImgs>
-  <div *ngFor="let skill of skillStack" class="skillImgContainer" data-aos="fade-left"
-    [attr.data-aos-offset]="skillsOffset">
-    <div class="skillImgBox">
-      <img src="{{skill.url}}">
-    </div>
-    <div class="skillText">
-      <h5>{{skill.name}}</h5>
-      <p>{{skill.rate}}/10 &#9733;</p>
-    </div>
-  </div>
+<ng-template #introText>
+  <div data-aos="fade-left" class="aboutBox ms-md-5 mt-3 mt-md-0 text-center">{{ "about" | translate }}</div>
 </ng-template>

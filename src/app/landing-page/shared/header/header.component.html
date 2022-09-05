@@ -1,15 +1,15 @@
 <nav data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"
   [ngClass]="!bgService.light ? 'navbar-light bg-light':'navbar-dark bg-dark'"
   class="navbar shadow navbar-expand-lg position-sticky top-0 left-0 right-0 nav">
-  <div class="container-fluid">
-    <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="navbar-brand" style="color: white;"
+  <div class="container">
+    <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="navbar-brand"
       [routerLink]="'.'">{{ 'navbar.headline' | translate}}</a>
 
     <button (click)="collapsed = !collapsed" [ngClass]="!collapsed ? 'is-active' : ''"
       class="hamburger hamburger--spin d-lg-none" type="button" aria-label="Menu" aria-controls="navigation"
       aria-expanded="true/false">
       <span class="hamburger-box">
-        <span [ngClass]="bgService.light ? 'hamburger-inner-dark':'hamburger-inner-light'"
+        <span [ngClass]="!bgService.light ? 'hamburger-inner-dark':'hamburger-inner-light'"
           class="hamburger-inner"></span>
       </span>
     </button>
