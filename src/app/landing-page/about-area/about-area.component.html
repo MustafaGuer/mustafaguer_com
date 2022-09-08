@@ -1,16 +1,19 @@
 <div [ngClass]="bgService.light ? 'bg-light' : 'bg-dark'" class="box pt-5 mt-5">
-  <div [ngClass]="bgService.light ? 'text-dark' : 'text-light'" class="d-flex justify-content-center align-items-center flex-wrap">
-        <ng-container *ngTemplateOutlet="introImage"></ng-container>
-        <ng-container *ngTemplateOutlet="introText"></ng-container>
-</div>
-
-<ng-template #introImage>
-  <div data-aos="fade-right" class="me-md-5">
-    <h5 class="text-center">${{'whoami' | translate}}</h5>
-    <img class="profileImg" src="../../../assets/img/mustafa.jpg" alt="Profile Image">
+  <div [ngClass]="bgService.light ? 'text-dark' : 'text-light'"
+    class="d-flex justify-content-center align-items-center flex-wrap">
+    <ng-container *ngTemplateOutlet="introImage"></ng-container>
+    <ng-container *ngTemplateOutlet="introText"></ng-container>
   </div>
-</ng-template>
 
-<ng-template #introText>
-  <div data-aos="fade-left" class="aboutBox ms-md-5 mt-3 mt-md-0 text-center">{{ "about" | translate }}</div>
-</ng-template>
+  <ng-template #introImage>
+    <div data-aos="fade-right" class="me-md-5">
+      <h5 class="text-center">${{'whoami' | translate}}</h5>
+      <img class="profileImg" src="../../../assets/img/mustafa.jpg" alt="Profile Image">
+    </div>
+  </ng-template>
+
+  <ng-template #introText>
+    <div data-aos="fade-left" class="aboutBox ms-md-5 mt-3 mt-md-0 text-center">
+      {{ "preabout" | translate}} {{ myAge }} {{'afterabout' | translate}}
+    </div>
+  </ng-template>

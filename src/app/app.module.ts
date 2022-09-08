@@ -20,6 +20,7 @@ import { ContactFormComponent } from './landing-page/contact-form/contact-form.c
 import { SkillStackComponent } from './landing-page/skill-stack/skill-stack.component';
 import { FooterComponent } from './landing-page/shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({

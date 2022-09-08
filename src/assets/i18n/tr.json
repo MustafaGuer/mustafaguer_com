@@ -1,7 +1,8 @@
 {
   "greet": "MerhabaAlem!",
   "whoami": "whoami",
-  "about": "32 yaşındayım ve bir bilişim uzmanıyım. Son birkaç yıldır Münih'te kendi taksi limuzin servisimi işletiyorum. Pandemi sırasında tamamen köklerime dönmeye ve yazılım geliştirme projeleri üzerinde çalışmaya karar verdim. Son bir yıl içinde basit web sitelerinden karmaşık web uygulamalarına kadar çeşitli ön uç projeleri geliştirdim. Artık ön uç web geliştirme alanında yeni deneyimler arıyorum.",
+  "preabout": "",
+  "afterabout": " yaşındayım ve bir bilişim uzmanıyım. Son birkaç yıldır Münih'te kendi taksi limuzin servisimi işletiyorum. Pandemi sırasında tamamen köklerime dönmeye ve yazılım geliştirme projeleri üzerinde çalışmaya karar verdim. Son bir yıl içinde basit web sitelerinden karmaşık web uygulamalarına kadar çeşitli ön uç projeleri geliştirdim. Artık ön uç web geliştirme alanında yeni deneyimler arıyorum.",
   "skillstack": "Beceri Yığını",
   "imprint": {
     "firstname": "Mustafa",

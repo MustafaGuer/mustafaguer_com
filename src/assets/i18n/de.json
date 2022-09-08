@@ -1,7 +1,8 @@
 {
   "greet": "HelloWelt!",
   "whoami": "whoami",
-  "about": "Ich bin 32 Jahre alt und IT-Fachmann. In den letzten Jahren habe ich meinen eigenen Taxi-Limousinen-Service in München geleitet. Während der Pandemie entschied ich mich, wieder ganz zu meinen Wurzeln in der IT zurückzukehren und an Softwareentwicklungsprojekten zu arbeiten. So habe ich im letzten Jahr eine Vielzahl von Front-End-Projekten von einfachen Websites bis hin zu komplexen Web-Apps entwickelt. Jetzt suche ich nach neuen Herausforderungen in der Front-End-Webentwicklung.",
+  "preabout": "Ich bin",
+  "afterabout": "Jahre alt und IT-Fachmann. In den letzten Jahren habe ich meinen eigenen Taxi-Limousinen-Service in München geleitet. Während der Pandemie entschied ich mich, wieder ganz zu meinen Wurzeln in der IT zurückzukehren und an Softwareentwicklungsprojekten zu arbeiten. So habe ich im letzten Jahr eine Vielzahl von Front-End-Projekten von einfachen Websites bis hin zu komplexen Web-Apps entwickelt. Jetzt suche ich nach neuen Herausforderungen in der Front-End-Webentwicklung.",
   "skillstack": "Skill Stack",
   "imprint": {
     "firstname": "Mustafa",
