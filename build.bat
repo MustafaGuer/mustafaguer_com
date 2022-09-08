@@ -1,6 +1,5 @@
 git add .
-set /p commit=Commit:
-git commit -m "%commit%"
+git commit -m "%*"
 git push
 
 ng build
