@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './landing-page/shared/header/header.component';
-import { LandingPageComponent } from './landing-page/sections/landing-page.component';
+import { SectionsComponent } from './landing-page/sections/sections.component';
 import { GreetingAreaComponent } from './landing-page/greeting-area/greeting-area.component';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -30,7 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
+    SectionsComponent,
     GreetingAreaComponent,
     HeaderComponent,
     ImprintComponent,

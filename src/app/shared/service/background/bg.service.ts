@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class BgService {
 
-  public light: boolean = false;
+  public light: boolean = true;
 
   constructor() { }
 
