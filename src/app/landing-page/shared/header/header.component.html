@@ -2,9 +2,8 @@
   [ngClass]="!bgService.light ? 'navbar-light bg-light':'navbar-dark bg-dark'"
   class="navbar shadow navbar-expand-lg position-sticky top-0 left-0 right-0 nav">
   <div class="container">
-    <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="navbar-brand"
-      [routerLink]="'.'">{{ 'navbar.headline' | translate}}</a>
-
+    <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="navbar-brand" [routerLink]="'.'">
+      {{ 'navbar.headline' | translate}}</a>
     <button (click)="collapsed = !collapsed" [ngClass]="!collapsed ? 'is-active' : ''"
       class="hamburger hamburger--spin d-lg-none" type="button" aria-label="Menu" aria-controls="navigation"
       aria-expanded="true/false">
@@ -21,16 +20,16 @@
             (click)="collapsed = true">{{'navbar.home' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
+          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#about"
+            (click)="collapsed = true">{{'navbar.about' | translate | titlecase}}</a>
+        </li>
+        <li class="nav-item">
           <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#skillStack"
             (click)="collapsed = true">{{'navbar.skills' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#portfolio"
             (click)="collapsed = true">{{'navbar.portfolio' | translate | titlecase}}</a>
-        </li>
-        <li class="nav-item">
-          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#about"
-            (click)="collapsed = true">{{'navbar.about' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#contact"
