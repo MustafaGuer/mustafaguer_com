@@ -176,5 +176,8 @@
     "portfolio": "portfolio",
     "journey": "meine reise",
     "contact": "kontakt"
+  },
+  "journey": {
+    "myjourney": "Meine Reise"
   }
 }

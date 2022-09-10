@@ -176,5 +176,8 @@
     "portfolio": "portfolio",
     "journey": "journey",
     "contact": "contact"
+  },
+  "journey": {
+    "myjourney": "My Journey"
   }
 }

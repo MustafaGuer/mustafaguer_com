@@ -176,5 +176,8 @@
     "portfolio": "portfolio",
     "journey": "hikayem",
     "contact": "iletişim"
+  },
+  "journey": {
+    "myjourney": "Yolculuğum"
   }
 }
