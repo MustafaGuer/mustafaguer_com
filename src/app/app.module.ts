@@ -21,6 +21,7 @@ import { SkillStackComponent } from './landing-page/skill-stack/skill-stack.comp
 import { FooterComponent } from './landing-page/shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { StorysComponent } from './landing-page/storys/storys.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -40,6 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactFormComponent,
     SkillStackComponent,
     FooterComponent,
+    StorysComponent,
   ],
   imports: [
     BrowserModule,

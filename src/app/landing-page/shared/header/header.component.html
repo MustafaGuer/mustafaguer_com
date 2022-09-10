@@ -32,6 +32,10 @@
             (click)="collapsed = true">{{'navbar.portfolio' | translate | titlecase}}</a>
         </li>
         <li class="nav-item">
+          <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#journey"
+            (click)="collapsed = true">{{'navbar.journey' | translate | titlecase}}</a>
+        </li>
+        <li class="nav-item">
           <a [ngClass]="!bgService.light ? 'link-dark':'link-light'" class="nav-link" href="#contact"
             (click)="collapsed = true">{{'navbar.contact' | translate | titlecase}}</a>
         </li>
