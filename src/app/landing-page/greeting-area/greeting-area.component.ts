@@ -27,6 +27,7 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit, OnDestroy {
   public greenPill = greenPillPath;
   public bluePill = bluePillPath;
   public redPill = redPillPath;
+  public headerTxt: string = '';
 
   @ViewChild('myCanvas') private myCanvas: ElementRef = {} as ElementRef;
   @HostListener('window:resize', ['$event'])
@@ -52,7 +53,7 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private async loadHeadline() {
     do {
-      document.getElementById('headline')!.innerHTML += `${this.activeHeadlineLang.charAt(this.headlineLetterIndex)}`;
+      this.headerTxt += this.activeHeadlineLang.charAt(this.headlineLetterIndex);
       await this.timer(this.headlineSpeed);
       this.headlineLetterIndex++
     } while (this.headlineLetterIndex < this.activeHeadlineLang.length);
@@ -80,7 +81,7 @@ export class GreetingAreaComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private resetHeadlineContainer(): void {
-    document.getElementById('headline')!.innerHTML = '';
+    this.headerTxt = '';
     clearTimeout(this.headlineTimerId);
     this.headlineLetterIndex = 0;
     this.loadHeadline();
