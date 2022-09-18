@@ -1,3 +1,4 @@
+import { BgService } from 'src/app/shared/service/background/bg.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StorysComponent implements OnInit {
 
-  constructor() { }
+  constructor(public bgService: BgService) { }
 
   ngOnInit(): void {
   }

@@ -1,5 +1,33 @@
 <div id="journey" class="container">
-  <h3 class="text-center mt-5 mb-5">{{ 'journey.myjourney' | translate }}</h3>
+  <h3 class="text-center mt-5 mb-5" [ngClass]="bgService.light ? 'text-dark': 'text-light'" >{{ 'journey.myjourney' | translate }}</h3>
 
-
+  <div class="d-inline-flex flex-wrap justify-content-evenly w-100  text-center">
+    <ng-container *ngTemplateOutlet="myStory"></ng-container>
+  </div>
 </div>
+
+
+<ng-template #myStory>
+  <div class="storyContainer my-3 p-3" [ngClass]="!bgService.light ? 'bg-light shadow-light' : 'shadow'">
+    <img src="../../../assets/icons/walk-line.png">
+    <h5>#1 Start in the IT</h5>
+    <p>In my apprenticeship as an information electronics technician, I gained a lot of experience in terms of
+      hardware and software</p>
+  </div>
+  <div class="storyContainer my-3 p-3" [ngClass]="!bgService.light ? 'bg-light shadow-light' : 'shadow'">
+    <img src="../../../assets/icons/heart-line.png">
+    <h5>2# Self-Employment Journey</h5>
+    <p>Over the last years, I have gained a lot of experience in organized, structured, and self-reliant work
+      over a variety of sectors and challenges.</p>
+  </div>
+  <div class="storyContainer my-3 p-3" [ngClass]="!bgService.light ? 'bg-light shadow-light' : 'shadow'">
+    <img src="../../../assets/icons/search-line.png">
+    <h5>3# Project experience</h5>
+    <p>You can find everything from simple landing pages to complex web applications in my portfolio.</p>
+  </div>
+  <div class="storyContainer my-3 p-3" [ngClass]="!bgService.light ? 'bg-light shadow-light' : 'shadow'">
+    <img src="../../../assets/icons/flight-takeoff-line.png">
+    <h5>4# The next Challenge</h5>
+    <p>I'm looking forward to contribute my knowledge of Javascript and Angular to your next project.</p>
+  </div>
+</ng-template>
