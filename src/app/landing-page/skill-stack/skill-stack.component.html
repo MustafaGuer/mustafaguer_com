@@ -1,6 +1,6 @@
 <div id="skillStack" [ngClass]="bgService.light ? 'bg-light':'bg-dark'" class="d-flex flex-column align-items-center pt-5">
   <h3 [ngClass]="bgService.light ? 'text-dark': 'text-light'" class="text-center mb-5">{{'skillstack' | translate}}</h3>
-  <div class="skillStackContainer w-50 d-flex justify-content-center flex-wrap">
+  <div class="skillStackContainer w-75 d-flex justify-content-center flex-wrap">
     <ng-container *ngTemplateOutlet="skillStackImgs"></ng-container>
   </div>
 </div>
@@ -8,15 +8,18 @@
 <ng-template #skillStackImgs>
   <div *ngFor="let skill of skillStack; let i = index;"
     [ngClass]="!bgService.light ? 'bg-light shadow-light' : 'shadow'"
-    class="skillImgContainer d-flex flex-column justify-content-between m-3"
-    [attr.data-aos]="skill.animation"
-    [attr.data-aos-delay]="defaultDelay"
-    [attr.data-aos-offset]="defaultOffset"
-    [attr.data-aos-anchor-placement]="defaultAnchorPlacement">
-    <div class="skillImgBox d-flex justify-content-center">
+    class="skillImgContainer d-flex align-items-center m-3"
+    [attr.data-aos]="isEven(i) ? 'flip-right' : 'flip-left'"
+    >
+    <!--
+      [attr.data-aos]="skill.animation"
+      [attr.data-aos-delay]="defaultDelay"
+      [attr.data-aos-anchor-placement]="defaultAnchorPlacement"
+      [attr.data-aos-offset]="defaultOffset" -->
+    <div class="skillImgBox me-1">
       <img src="{{skill.url}}">
     </div>
-    <div class="skillText text-center mt-3 border-top">
+    <div class="skillText text-start">
       <h5>{{skill.name}}</h5>
     </div>
   </div>

@@ -6,10 +6,9 @@
 .skillStackContainer {
 
   div {
-    width: 120px;
 
     img {
-      width: 64px;
+      width: 32px;
     }
   }
 
@@ -21,7 +20,13 @@
 
 .skillImgContainer {
   // box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, .1);
+  width: 150px;
+  padding: 10px 8px;
   border-radius: 16px;
+
+  h5 {
+    margin-bottom: 0;
+  }
 }
 
 .shadow-light {

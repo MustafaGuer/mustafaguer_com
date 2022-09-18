@@ -11,7 +11,7 @@ import { skillsStack } from 'src/app/shared/const/skillStack';
 export class SkillStackComponent implements OnInit {
 
   public skillStack: Skills[] = skillsStack;
-  public defaultOffset: string = '300';
+  public defaultOffset: string = '200';
   public defaultDelay: string = '0';
   public defaultAnchorPlacement: string = 'bottom-bottom';
 
@@ -23,10 +23,10 @@ export class SkillStackComponent implements OnInit {
 
   private setAnimation(): void {
     // this.skillStack.forEach((skill, index) => this.isEven(index) ? skill.animation = 'fade-down-right' : skill.animation = 'fade-down-left');
-    this.skillStack.forEach((skill, index) => this.isEven(index) ? skill.animation = 'flip-right' : skill.animation = 'flip-left');
+    // this.skillStack.forEach((skill, index) => this.isEven(index) ? skill.animation = 'flip-right' : skill.animation = 'flip-left');
   }
 
-  private isEven(n: number): boolean {
+  public isEven(n: number): boolean {
     return n % 2 == 0;
   }
 
