@@ -23,4 +23,7 @@ export class FooterComponent implements OnInit {
     this.translate.use(lang);
   }
 
+  public foo() {
+
+  }
 }
