@@ -1,5 +1,6 @@
 @import "src/app/shared/scss/colors.scss";
 @import "src/app/shared/scss/sizes.scss";
+@import "src/app/shared/scss/fonts.scss";
 
 .profileImg {
   width: 200px;
@@ -8,4 +9,5 @@
 
 .aboutBox {
   max-width: 400px;
+  font-family: 'Aladin'
 }
